@@ -32,7 +32,7 @@ h1 {
 
 h2 {
     font-size: 2.2em;
-    line-height: 100px;
+    line-height: 70px;
     letter-spacing: 10px;
     text-align: center;
     color: white;
@@ -70,12 +70,16 @@ img {
     max-width: 100%;
 }
 
-#section2, #section3, #section4, #section5, #section10, #section14, #section15, #section19, #section20, #section21 {
+#section2, #section3, #section4, #section5, #section10, #section11, #section12, #section21, #section22 {
     background: linear-gradient(to bottom, #000000 5%, #423e3e 50%, #423e3e 57%, #000000 95%);
 }
 
-#section6, #section7, #section8, #section9, #section11, #section12, #section13, #section16, #section17, #section18, #section21, #section22, #section23, #section24 {
+#section6, #section7, #section8, #section9, #section13, #section14, #section18, #section19, #section20, #section23 {
     background-color: #000;
+}
+
+#section15, #section16, #section17 {
+    background-color: #1D4158;
 }
 
 /* header */
@@ -221,6 +225,16 @@ img {
     text-decoration: none;
 }
 
+/* 同車共載 */
+
+#section15 h2 {
+    border: 8px solid #fbb03b;
+    border-radius: 10px;
+    color: #fbb03b;
+    width: 250px;
+    margin: auto;
+}
+
 .flex_layout .law img {
     width: 100%;
     padding: 5%;
@@ -233,7 +247,29 @@ img {
 
 .flex_layout .law p {
     padding: 3%;
-    text-align: left;
+    text-align: center;
+    color: #fbb03b
+}
+
+.flex_layout .law .car_text {
+    width: 30%;
+    color: black;
+    padding: 10px;
+    background-color: #fbb03b;
+}
+
+.flex_layout .law .car_text .psline1 {
+    position: absolute;
+    transform: rotate(-2deg);
+}
+
+.flex_layout .law .car_text .psline2 {
+    position: absolute;
+    transform: rotate(-3deg);
+}
+
+.flex_layout .law .car_text:after {
+    border: 1px solid black;
 }
 
 .one-three {
