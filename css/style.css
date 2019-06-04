@@ -462,7 +462,7 @@ img {
 }
 
 #handle:active {
-    transform: rotate(6deg);
+    transform: rotate(15deg);
     transform-origin: center bottom;
 }
 
@@ -712,7 +712,7 @@ sup {
     margin-bottom: 20px;
 }
 
-#section13 p {
+#section13 p, #section14 p {
     color: white;
 }
 
@@ -732,4 +732,21 @@ sup {
     color: #101C22;
     padding: 5px 0;
     margin: 0 5px;
+}
+
+/* 倒酒/休息 解答 */
+
+#info_answer, #info_answer1 {
+    display: none;
+    z-index: 99;
+    width: 50%;
+    margin: auto;
+    box-shadow: 3px 4px 8px black;
+    background-color: #a73636;
+    border: 1px solid;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
 }

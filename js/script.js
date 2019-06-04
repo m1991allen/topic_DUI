@@ -81,10 +81,20 @@ $(document).ready(function() {
 
   $("#hammer").mousedown(function() {
     $("#hammer>img").attr("src", "img/hammer_knock.svg");
-    
   });
   $("#hammer").mouseup(function() {
     $("#hammer>img").attr("src", "img/hammer.svg");
+  });
+
+  $("#result").click(function() {
+    $("#info_answer").css("display", "block");
+  });
+  $("#result1").click(function() {
+    $("#info_answer1").css("display", "block");
+  });
+
+  $(".fancybox-close").click(function() {
+    $("#info_answer, #info_answer1").css("display", "none");
   });
 });
 
