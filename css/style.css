@@ -74,8 +74,12 @@ img {
     background: linear-gradient(to bottom, #000000 5%, #423e3e 50%, #423e3e 57%, #000000 95%);
 }
 
-#section6, #section7, #section8, #section9, #section13, #section14, #section18, #section19, #section20, #section23 {
+#section6, #section7, #section8, #section9, #section18, #section19, #section20, #section23 {
     background-color: #000;
+}
+
+#section13, #section14 {
+    background-color: #101C22;
 }
 
 #section15, #section16, #section17 {
@@ -227,14 +231,6 @@ img {
 
 /* 同車共載 */
 
-#section15 h2 {
-    border: 8px solid #fbb03b;
-    border-radius: 10px;
-    color: #fbb03b;
-    width: 250px;
-    margin: auto;
-}
-
 .flex_layout .law img {
     width: 100%;
     padding: 5%;
@@ -251,28 +247,6 @@ img {
     color: #fbb03b
 }
 
-.flex_layout .law .car_text {
-    width: 30%;
-    color: black;
-    padding: 10px;
-    background-color: #fbb03b;
-    z-index: 1;
-}
-
-.flex_layout .law .car_text .psline1 {
-    position: absolute;
-    transform: rotate(-2deg);
-}
-
-.flex_layout .law .car_text .psline2 {
-    position: absolute;
-    transform: rotate(-3deg);
-}
-
-.flex_layout .law .car_text:after {
-    border: 1px solid black;
-}
-
 .one-three {
     width: 30%;
     margin: auto
@@ -281,6 +255,14 @@ img {
 .two-three {
     width: 85%;
     margin: auto
+}
+
+.cut_one {
+    width: 35%;
+}
+
+.cut_two {
+    width: 65%;
 }
 
 #mobile-screen {
@@ -301,6 +283,9 @@ img {
     .two-three {
         width: 100%;
         margin: auto
+    }
+    .cut_one, .cut_two {
+        width: 100%;
     }
     #mobile-screen {
         display: block;
@@ -696,4 +681,55 @@ sup {
 #timeline-chart .apexcharts-toolbar {
     opacity: 1;
     border: 0;
+}
+
+/* 同車共載 */
+
+#section15 h2 {
+    border: 8px solid #fbb03b;
+    border-radius: 10px;
+    color: #fbb03b;
+    width: 250px;
+    margin: auto;
+}
+
+.flex_layout .law .car_text {
+    width: 30%;
+    color: black;
+    padding: 10px;
+    background-color: #fbb03b;
+    z-index: 1;
+}
+
+/* 道路交通條例 */
+
+#section13 h2 {
+    border: 8px solid white;
+    border-radius: 10px;
+    color: white;
+    width: 420px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#section13 p {
+    color: white;
+}
+
+#section13 figure {
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .cut_one figure {
+        width: 40%;
+        margin: auto;
+    }
+}
+
+.hightlight {
+    background-color: #fbb03b;
+    color: #101C22;
+    padding: 5px 0;
+    margin: 0 5px;
 }

@@ -78,6 +78,14 @@ $(document).ready(function() {
     openEffect: "none",
     closeEffect: "none"
   });
+
+  $("#hammer").mousedown(function() {
+    $("#hammer>img").attr("src", "img/hammer_knock.svg");
+    
+  });
+  $("#hammer").mouseup(function() {
+    $("#hammer>img").attr("src", "img/hammer.svg");
+  });
 });
 
 var gulp = require("gulp");
