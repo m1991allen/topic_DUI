@@ -108,7 +108,7 @@ span {
 }
 
 h1 {
-  font-size: 2.4em;
+  font-size: 1.8em;
   line-height: 100px;
   letter-spacing: 10px;
   text-align: center;
@@ -116,7 +116,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.2em;
+  font-size: 1.6em;
   line-height: 70px;
   letter-spacing: 10px;
   text-align: center;
@@ -124,7 +124,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.6em;
+  font-size: 1.4em;
   line-height: 60px;
   text-align: center;
   text-align: center;
@@ -139,12 +139,13 @@ p {
 }
 
 button {
-  font-size: 1.4em;
+  font-size: 1.2em;
+  font-family: "KangXiZiDianTi";
 }
 
 label {
   cursor: pointer;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 ul li {
@@ -313,7 +314,7 @@ img {
 }
 
 .pour_layout {
-  width: 60%;
+  width: 80%;
   margin: auto;
 }
 
