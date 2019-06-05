@@ -875,6 +875,9 @@ sup {
     position: absolute;
     transform: rotate(-17deg);
   }
+  #section15 h2 {
+    width: 80%;
+  }
 }
 
 /* 道路交通條例 */
@@ -901,6 +904,9 @@ sup {
   .cut_one figure {
     width: 40%;
     margin: auto;
+  }
+  #section13 h2 {
+    width: 80%;
   }
 }
 
