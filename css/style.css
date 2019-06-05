@@ -1,9 +1,12 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
 @font-face {
   /* 上傳字體 */
-  font-family: "KangXiZiDianTi";
-  src: url(../font/KangXiZiDianTi.otf);
+  font-family: "WenYue-GuDianMingChaoTi-NC";
+  src: url(../font/WenYue-GuDianMingChaoTi-NC.otf);
+}
+
+* {
+  font-family: "WenYue-GuDianMingChaoTi-NC";
 }
 
 html,
@@ -95,16 +98,6 @@ video {
   background: transparent;
   vertical-align: baseline;
   box-sizing: border-box;
-  font-family: Helvetica, "Open Sans", serif, sans-serif, "黑體-繁", "STHeti",
-    "微軟正黑體", "Microsoft JhengHei";
-}
-
-h1,
-h2,
-h3,
-p,
-span {
-  font-family: "KangXiZiDianTi";
 }
 
 h1 {
@@ -140,7 +133,6 @@ p {
 
 button {
   font-size: 1.2em;
-  font-family: "KangXiZiDianTi";
 }
 
 label {
@@ -421,6 +413,7 @@ img {
 .clock_layout {
   text-align: center;
   display: flex;
+  margin-top: 15%;
 }
 
 .clock_layout img {
@@ -875,9 +868,6 @@ sup {
     position: absolute;
     transform: rotate(-17deg);
   }
-  #section15 h2 {
-    width: 80%;
-  }
 }
 
 /* 道路交通條例 */
@@ -907,6 +897,13 @@ sup {
   }
   #section13 h2 {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #section13 h2 {
+    width: 100%;
+    border: none;
   }
 }
 
