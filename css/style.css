@@ -1,12 +1,13 @@
 @charset "UTF-8";
 @font-face {
   /* 上傳字體 */
-  font-family: "WenYue-GuDianMingChaoTi-NC";
-  src: url(../font/WenYue-GuDianMingChaoTi-NC.otf);
+  font-family: "NotoSansCJKtc-Regular", "NotoSansCJKtc-Bold";
+  src: url(../font/NotoSansCJKtc-Regular.otf);
+  src: url(../font/NotoSansCJKtc-Bold.otf);
 }
 
 * {
-  font-family: "WenYue-GuDianMingChaoTi-NC";
+  font-family: "NotoSansCJKtc-Regular";
 }
 
 html,
@@ -106,6 +107,7 @@ h1 {
   letter-spacing: 10px;
   text-align: center;
   color: white;
+  font-family: "NotoSansCJKtc-Bold";
 }
 
 h2 {
@@ -114,6 +116,7 @@ h2 {
   letter-spacing: 10px;
   text-align: center;
   color: white;
+  font-family: "NotoSansCJKtc-Bold";
 }
 
 h3 {
@@ -413,7 +416,7 @@ img {
 .clock_layout {
   text-align: center;
   display: flex;
-  margin-top: 15%;
+  margin-top: 70px;
 }
 
 .clock_layout img {
@@ -873,7 +876,7 @@ sup {
 /* 道路交通條例 */
 
 #section13 h2 {
-  border: 8px solid white;
+  border: 3px solid white;
   border-radius: 10px;
   color: white;
   width: 420px;
@@ -910,7 +913,7 @@ sup {
 .hightlight {
   background-color: #fbb03b;
   color: #101c22;
-  padding: 5px 0;
+  padding: 1px 0;
   margin: 0 5px;
 }
 
