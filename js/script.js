@@ -80,10 +80,10 @@ $(document).ready(function() {
   });
 
   $("#hammer").mousedown(function() {
-    $("#hammer>img").attr("src", "img/hammer_knock.svg");
+    $("#hammer>img").attr("src", "img/hammer_knock.png");
   });
   $("#hammer").mouseup(function() {
-    $("#hammer>img").attr("src", "img/hammer.svg");
+    $("#hammer>img").attr("src", "img/hammer.png");
   });
 
   $("#result").click(function() {
