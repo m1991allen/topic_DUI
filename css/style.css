@@ -10,87 +10,7 @@
   font-family: "NotoSansCJKtc-Regular";
 }
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -128,19 +48,19 @@ h3 {
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 35px;
   text-align: center;
   color: white;
 }
 
 button {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 label {
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 ul li {
@@ -151,44 +71,16 @@ img {
   max-width: 100%;
 }
 
-#section2,
-#section3,
-#section4,
-#section5,
-#section10,
-#section11,
-#section12,
-#section21,
-#section22 {
-  background: linear-gradient(
-    to bottom,
-    #000000 5%,
-    #423e3e 50%,
-    #423e3e 57%,
-    #000000 95%
-  );
-}
-
-#section6,
-#section7,
-#section8,
-#section9,
-#section18,
-#section19,
-#section20,
-#section23 {
+#section25 {
   background-color: #000;
 }
 
-#section13,
-#section14 {
+#section2, #section3, #section4, #section5, #section10, #section11, #section12, #section13, #section14, #section15, #section16, #section23, #section24 {
   background-color: #101c22;
 }
 
-#section15,
-#section16,
-#section17 {
-  background-color: #1d4158;
+#section6, #section7, #section8, #section9, #section17, #section18, #section19, #section20, #section21, #section22 {
+  background-color: #0a222d;
 }
 
 /* header */
@@ -197,6 +89,7 @@ img {
   background-image: url(../img/bg.jpg);
   background-size: cover;
   width: 100%;
+  height: 100vh;
 }
 
 @media screen and (max-width: 768px) {
@@ -205,8 +98,7 @@ img {
   }
 }
 
-#section1 h1,
-#section1 p {
+#section1 h1, #section1 p {
   width: 85%;
   margin: auto;
 }
@@ -292,8 +184,10 @@ img {
 
 /* main */
 
-#section24 {
+#section25 {
   background-image: url(../img/bg_footer.png);
+  width: 100%;
+  height: 100vh;
   background-size: cover;
   color: white;
 }
@@ -311,6 +205,10 @@ img {
 .pour_layout {
   width: 80%;
   margin: auto;
+}
+
+.pour_layout {
+  width: 300px;
 }
 
 .flex_layout {
@@ -335,7 +233,7 @@ img {
   text-decoration: none;
 }
 
-/* 同車共載 */
+/* 同車共責 */
 
 .flex_layout .law img {
   width: 100%;
@@ -351,6 +249,11 @@ img {
   padding: 3%;
   text-align: center;
   color: #fbb03b;
+}
+
+.flex_layout .law ul {
+  padding: 3%;
+  line-height: 35px;
 }
 
 .one-three {
@@ -390,8 +293,7 @@ img {
     width: 100%;
     margin: auto;
   }
-  .cut_one,
-  .cut_two {
+  .cut_one, .cut_two {
     width: 100%;
   }
   #mobile-screen {
@@ -443,8 +345,7 @@ img {
   color: white;
 }
 
-.clock_layout1,
-.clock_layout2 {
+.clock_layout1, .clock_layout2 {
   width: 50%;
 }
 
@@ -457,13 +358,13 @@ img {
 /* pour_gmae.style */
 
 #tap-container {
-  position: absolute;
-  top: 25%;
-  left: 0;
+  /* position: absolute;
+  top: 6000px;
+  left: 0; */
 }
 
 #tap {
-  width: 200px;
+  width: 120px;
   background: #ddd;
   height: 35px;
   margin: 140px 0 0 0;
@@ -498,7 +399,6 @@ img {
   top: 10px;
   right: 10px;
   transform: rotate(-20deg);
-  z-index: 2;
 }
 
 #tap:before {
@@ -506,7 +406,7 @@ img {
   display: block;
   position: absolute;
   width: 140px;
-  height: 60px;
+  height: 20px;
   background: grey;
   left: -20px;
   top: -15px;
@@ -533,9 +433,9 @@ img {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   width: 30px;
-  position: absolute;
-  top: 30px;
-  left: 150px;
+  /* position: absolute; */
+  /* top: 30px;
+  left: 150px; */
   border-radius: 10px 10px 0 0;
   z-index: 3;
   cursor: pointer;
@@ -563,9 +463,9 @@ img {
   width: 30px;
   height: 30px;
   background: #ddd;
-  position: absolute;
+  /* position: absolute;
   bottom: -20px;
-  left: -5px;
+  left: -5px; */
   border-radius: 20px 20px 10px 10px;
   transition: 0.5s;
 }
@@ -576,9 +476,9 @@ img {
 }
 
 #pour {
-  position: absolute;
+  /* position: absolute;
   left: 172px;
-  top: 200px;
+  top: 200px; */
   width: 16px;
   height: 0px;
   z-index: 1;
@@ -605,9 +505,9 @@ img {
 }
 
 #mug-container {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
-  left: 7%;
+  left: 7%; */
 }
 
 @media screen and (max-width: 768px) {
@@ -620,8 +520,8 @@ img {
 
 #mug {
   margin: 60px 0 0 40px;
-  border: 20px solid #e8f9ff;
-  border-bottom-width: 30px;
+  border: 14px solid #e8f9ff;
+  border-bottom-width: 14px;
   width: 120px;
   height: 230px;
   border-top: none;
@@ -636,8 +536,8 @@ img {
   content: "";
   display: block;
   bottom: -40px;
-  height: 20px;
-  width: 142px;
+  height: 14px;
+  width: 156px;
   left: -30px;
   background: #e8f9ff;
 }
@@ -647,10 +547,10 @@ img {
   content: "";
   display: block;
   right: -80px;
-  top: 30px;
+  top: 50px;
   width: 40px;
   height: 105px;
-  border: 25px solid #e8f9ff;
+  border: 14px solid #e8f9ff;
   border-left: none;
   border-radius: 0 30px 30px 0;
 }
@@ -659,13 +559,7 @@ img {
   width: 100%;
   height: 0%;
   max-height: 100%;
-  background: linear-gradient(
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 35%,
-    rgba(237, 237, 173, 1) 43%,
-    rgba(229, 197, 57, 1) 44%,
-    rgba(229, 197, 57, 1) 100%
-  );
+  background: linear-gradient( rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(237, 237, 173, 1) 43%, rgba(229, 197, 57, 1) 44%, rgba(229, 197, 57, 1) 100%);
   background-repeat: repeat;
   background-size: 100% 200%;
   position: absolute;
@@ -798,15 +692,68 @@ sup {
   border: 0;
 }
 
-/* 同車共載 */
+/* 道路交通條例 */
 
 #section15 h2 {
+  border: 3px solid white;
+  border-radius: 10px;
+  color: white;
+  width: 420px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+#section15 p, #section16 p {
+  color: white;
+}
+
+#section15 figure {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .cut_one figure {
+    width: 40%;
+    margin: auto;
+  }
+  #section15 h2 {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #section15 h2 {
+    width: 100%;
+    border: none;
+  }
+}
+
+.hightlight {
+  background-color: #fbb03b;
+  color: #101c22;
+  padding: 1px 0;
+  margin: 0 5px;
+  white-space: nowrap;
+}
+
+/* 同車共責 */
+
+#section17 h2, #section18 h2, #section19 h2 {
   border: 8px solid #fbb03b;
   border-radius: 10px;
   color: #fbb03b;
   width: 250px;
   margin: auto;
 }
+
+.date {
+  width: 100px;
+  float: right;
+  margin-top: 30px;
+  z-index: 3;
+}
+
+/* 同車共責pc */
 
 .flex_layout .law .car_text {
   width: 30%;
@@ -818,27 +765,128 @@ sup {
   position: relative;
 }
 
+.flex_layout .law .carps {
+  position: absolute;
+  left: 5%;
+}
+
 .flex_layout .law .carps::before {
+  content: "";
+  right: -230px;
+  border-style: solid;
+  border-width: 0 0 25px 235px;
+  border-color: transparent transparent transparent #fbb03b;
+  position: absolute;
+  z-index: 1;
+  transition: 1s;
+}
+
+.flex_layout .law .pcblock {
+  position: absolute;
+  right: 5%;
+}
+
+.flex_layout .law .pcblock::before {
+  content: "";
+  top: 0;
+  left: -290px;
+  border-style: solid;
+  border-width: 0px 285px 20px 10px;
+  border-color: transparent #fbb03b transparent transparent;
+  position: absolute;
+  transform: rotate(5deg);
+  transition: 1s;
+}
+
+.flex_layout .law .car_img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 1610px) {
+  .flex_layout .law .carps::before {
+    right: -195px;
+    border-width: 0px 0px 25px 200px;
+  }
+  .flex_layout .law .pcblock::before {
+    left: -210px;
+    border-width: 0px 240px 20px 10px;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .flex_layout .law .carps::before {
+    right: -165px;
+    border-width: 0px 0px 25px 170px;
+  }
+  .flex_layout .law .pcblock::before {
+    left: -180px;
+    border-width: 0px 190px 20px 10px;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  .flex_layout .law .carps::before {
+    right: -130px;
+    border-width: 0px 0px 25px 140px;
+  }
+  .flex_layout .law .pcblock::before {
+    left: -130px;
+    border-width: 0px 130px 20px 10px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .flex_layout .law .carps::before {
+    right: -90px;
+    border-width: 0px 0px 25px 100px;
+  }
+  .flex_layout .law .pcblock::before {
+    left: -90px;
+    border-width: 0px 100px 20px 10px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .flex_layout .law .carps::before {
+    right: -120px;
+    border-width: 0px 0px 25px 130px;
+  }
+  .flex_layout .law .pcblock::before {
+    left: -40px;
+    border-width: 0px 130px 20px 10px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .date {
+    display: none;
+  }
+}
+
+/* 同車共責mobile */
+
+.flex_layout .law .car_text_m {
+  width: 30%;
+  color: black;
+  padding: 10px;
+  background-color: #fbb03b;
+  border-radius: 18px;
+  position: relative;
+}
+
+.flex_layout .law .carps_m::after {
   content: "";
   right: -93px;
   border-style: solid;
   border-width: 15px 0 0 100px;
   border-color: transparent transparent transparent #fbb03b;
   position: absolute;
+  z-index: 1;
 }
 
-.pcblock::before {
-  content: "";
-  top: 0;
-  left: -105px;
-  border-style: solid;
-  border-width: 0px 110px 20px 10px;
-  border-color: transparent #fbb03b transparent transparent;
-  position: absolute;
-  transform: rotate(15deg);
-}
-
-.flex_layout .law .car_img {
+.flex_layout .law .car_img_m {
   width: 40%;
 }
 
@@ -849,78 +897,46 @@ sup {
 @media screen and (max-width: 768px) {
   .mbblcok {
     display: block;
+    margin-bottom: 15px;
   }
-  .pcblock {
+  .pcblock_m {
     display: none;
   }
-  .flex_layout .law .car_text,
-  .flex_layout .law .car_img {
+  .flex_layout .law .car_text_m, .flex_layout .law .car_img_m {
     width: 100%;
     margin-bottom: 0px !important;
+    z-index: 1;
   }
-  .flex_layout .law .carps::before {
+  .flex_layout .law .carps_m::after {
     display: none;
   }
-  .flex_layout .law .carps::after {
+  .flex_layout .law .carps_m::before {
     content: "";
-    bottom: -50px;
-    left: 130px;
+    bottom: -53px;
+    left: 180px;
     border-style: solid;
     border-width: 60px 20px 0px 20px;
     border-color: #fbb03b transparent transparent transparent;
     position: absolute;
-    transform: rotate(-17deg);
+    transform: rotate(17deg);
   }
 }
 
-/* 道路交通條例 */
-
-#section13 h2 {
-  border: 3px solid white;
-  border-radius: 10px;
-  color: white;
-  width: 420px;
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-#section13 p,
-#section14 p {
-  color: white;
-}
-
-#section13 figure {
-  cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-  .cut_one figure {
-    width: 40%;
-    margin: auto;
-  }
-  #section13 h2 {
-    width: 80%;
+@media screen and (max-width: 550px) {
+  .flex_layout .law .carps_m::before {
+    left: 130px;
   }
 }
 
-@media screen and (max-width: 400px) {
-  #section13 h2 {
-    width: 100%;
-    border: none;
+@media screen and (max-width: 415px) {
+  .flex_layout .law .carps_m::before {
+    left: 90px;
   }
-}
-
-.hightlight {
-  background-color: #fbb03b;
-  color: #101c22;
-  padding: 1px 0;
-  margin: 0 5px;
 }
 
 /* 倒酒/休息 解答 */
 
-#info_answer,
-#info_answer1 {
+#info_answer, #info_answer1 {
   display: none;
   z-index: 99;
   width: 50%;
@@ -931,6 +947,110 @@ sup {
   border-radius: 10px;
   top: 50%;
   left: 50%;
-  position: absolute;
+  padding: 10px;
+  position: fixed;
   transform: translateX(-50%) translateY(-50%);
+}
+
+.mobilescreen {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .fullscreen {
+    display: none;
+  }
+  .mobilescreen {
+    display: block;
+  }
+}
+
+/* 問題 */
+
+.flex_layout_noblock {
+  display: flex;
+}
+
+.psman {
+  background-color: #EDA03A;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  position: absolute;
+  width: 300px;
+  z-index: 1;
+  margin: 1%;
+  box-shadow: 1px 2px 0px #eda03a;
+  transition: 3s !important;
+}
+
+.psman p {
+  color: #0A222D !important;
+  transition: .2s;
+}
+
+.area {
+  position: relative;
+}
+
+.area1 {
+  top: 0
+}
+
+.area1:before {
+  content: "";
+  border-style: solid;
+  border-width: 1px 0 5px 110px;
+  border-color: transparent transparent transparent #EDA03A;
+  position: absolute;
+  right: -100px;
+  bottom: -2px;
+}
+
+.area2 {
+  bottom: 0
+}
+
+.area2:before {
+  content: "";
+  border-style: solid;
+  border-width: 1px 0 5px 110px;
+  border-color: transparent transparent transparent #EDA03A;
+  position: absolute;
+  right: -90px;
+  top: 0;
+}
+
+.area3 {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.area3:before {
+  content: "";
+  border-style: solid;
+  border-width: 1px 110px 7px 0px;
+  border-color: transparent #EDA03A transparent transparent;
+  position: absolute;
+  left: -100px;
+  bottom: -2px;
+}
+
+@media screen and (max-width:1040px) {
+  .area1:before, .area2:before, .area3:before {
+    width: 300px;
+    border-width: 0;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .area1, .area2, .area3 {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .area1, .area2, .area3 {
+    width: 190px;
+  }
 }

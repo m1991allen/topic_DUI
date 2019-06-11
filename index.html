@@ -11,10 +11,10 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- reset_css -->
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- fullpage_css -->
-    <link rel="stylesheet" href="css/fullpage.css">
     <!-- fancybox_css(media play) -->
     <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <!-- aos_css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- my_css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -23,7 +23,7 @@
     <main id="fullpage">
         <!-- 前言  -->
         <section id="section1" class="section">
-            <h1><span style="font-size: 2em;">醉</span>該萬死</h1>
+            <h1><span style="font-size: 2em ">醉</span>該萬死</h1>
             <p>
                 幾乎每天在媒體上，都可以看到酒駕事故發生，甚至因此奪走無辜生命，引發社會公憤。
             </p>
@@ -35,7 +35,7 @@
         <section id="section2" class="wire_layout section">
             <h2>人物訪談</h2>
             <div class="inner_layout">
-                <div class="flex_layout">
+                <div data-aos="fade-up" class="flex_layout">
                     <div class="person one-three">
                         <a class="various fancybox.iframe" href="https://www.youtube.com/embed/vagouqXBxBE?autoplay=1">
                             <img src="img/how.png" alt="p2"></a>
@@ -52,9 +52,8 @@
         </section>
         <!-- 人物訪談  -->
         <section id="section3" class="wire_layout section">
-            <h2>人物訪談</h2>
             <div class="inner_layout">
-                <div class="flex_layout">
+                <div data-aos="fade-up" class="flex_layout">
                     <div class="person one-three">
                         <a class="various fancybox.iframe" href="https://www.youtube.com/embed/vagouqXBxBE?autoplay=1">
                             <img src="img/how.png" alt="p2"></a>
@@ -71,9 +70,8 @@
         </section>
         <!-- 人物訪談  -->
         <section id="section4" class="wire_layout section">
-            <h2>人物訪談</h2>
             <div class="inner_layout">
-                <div class="flex_layout">
+                <div data-aos="fade-up" class="flex_layout">
                     <div class="person one-three">
                         <a class="various fancybox.iframe" href="https://www.youtube.com/embed/vagouqXBxBE?autoplay=1">
                             <img src="img/how.png" alt="p2"></a>
@@ -90,19 +88,20 @@
         </section>
         <!-- 人物訪談  -->
         <section id="section5" class="wire_layout section">
-            <h2>人物訪談</h2>
             <div class="inner_layout">
-                <div class="flex_layout">
+                <div data-aos="fade-up" class="flex_layout">
                     <div class="person one-three">
                         <a class="various fancybox.iframe" href="https://www.youtube.com/embed/vagouqXBxBE?autoplay=1">
                             <img src="img/how.png" alt="p2"></a>
                     </div>
                     <div class="person two-three">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, voluptatum.
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel ad recusandae earum,
+                            esse cumque id ullam laborum quos temporibus. Quia totam, quo vel pariatur voluptatum quasi
+                            repellendus itaque ut.s
                             <a class="various fancybox.iframe"
                                 href="https://www.youtube.com/embed/vagouqXBxBE?autoplay=1"><i
                                     class="fab fa-youtube"></i> 點我觀看</a>
-                                   <p>（無奈的是，同樣的故事卻不斷上演）</p>
+                            <p>（無奈的是，同樣的故事卻不斷上演）</p>
                     </div>
                 </div>
             </div>
@@ -118,7 +117,6 @@
         </section>
         <!-- 數據 -->
         <section id="section7" class="wire_layout section">
-            <h2>酒駕數據</h2>
             <div class="inner_layout">
                 <div id="chart">
                     <div id="timeline-chart"></div>
@@ -127,7 +125,6 @@
         </section>
         <!-- 數據 -->
         <section id="section8" class="wire_layout section">
-            <h2>酒駕數據</h2>
             <div class="inner_layout">
                 <div id="chart">
                     <div id="timeline-chart"></div>
@@ -136,7 +133,6 @@
         </section>
         <!-- 數據 -->
         <section id="section9" class="wire_layout section">
-            <h2>酒駕數據</h2>
             <div class="inner_layout">
                 <div id="chart">
                     <div id="timeline-chart"></div>
@@ -144,39 +140,70 @@
             </div>
             <p>（每年仍然有10萬取締案件，民眾僥倖心態）</p>
         </section>
-        <!-- 動手倒倒看 -->
+        <!-- 問題 -->
         <section id="section10" class="wire_layout section">
             <div class="pour_layout">
-                <h2>動手倒看看</h2>
-                <p>一個體重60公斤的人，喝了多少12% 的紅酒，呼氣所含酒精濃度會達0.25mg/L？</p>
-                <img src="img/qut.png" alt="">
+                <h2>一個問題：</h2>
+                <p>一個體重60公斤的人，喝了多少 5% 的啤酒，呼氣所含酒精濃度會達 0.25 mg/L？</p>
+                <img data-aos="zoom-in" src="img/qut.png" alt="">
+                <button id="result" class="btn_result">查看答案</button>
             </div>
         </section>
-        <!-- 動手倒倒看 -->
+        <!-- 問題 -->
         <section id="section11" class="wire_layout section">
-            <div class="pour_layout">
-                <div id="tap-container">
-                    <div id="tap"></div>
-                    <div id="handle"></div>
-                    <div id="pour"></div>
-                </div>
-                <div id="mug-container">
-                    <div id="mug">
-                        <div id="beer"></div>
+        </section>
+        <!-- 問題 -->
+        <section id="section12" class="wire_layout section">
+            <div class="inner_layout">
+                <div class="flex_layout">
+                    <div class="law two-three">
+                        <h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                            data-aos-duration="1000" style="text-align: left; padding-left:3%">但是...</h2>
+                        <p style="text-align: left">
+                            這個公式僅供參考，酒精濃度還和性別、年齡、飲酒速度、是否空腹、服用藥物等多種因素相關。<br>而根據醫學研究，喝酒之後會產生：
+                        </p>
+                        <div class="flex_layout_noblock">
+                            <div class="area one-two">
+                                <div data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000"
+                                    class="psman area1">
+                                    <p>因為精神狀況欠佳產生「飛蛾效應」的趨光性行為</p>
+                                </div>
+                                <div data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000"
+                                    class="psman area2">
+                                    <p>運動反射神經遲鈍遇到突發狀況無法反應</p>
+                                </div>
+                            </div>
+                            <figure class="one-three">
+                                <img data-aos="zoom-in" src="img/man.svg" alt="">
+                            </figure>
+                            <div class="area one-two" data-aos="fade-left" data-aos-delay="1000"
+                                data-aos-duration="2000">
+                                <div class="psman area3">
+                                    <p>恐怕造成視野縮減，無法看清週遭事物，增加危險性</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align: left">
+                            因此法律標準只是平均值，每位駕駛都應該有<span style="font-size: 1.4em">「喝了酒就不該駕駛上路」</span>的認知。<br>
+                            根據台北市警察局統計，2018年晨間飲酒取締件數比之前增加25%，原因出在許多人疏忽隔天酒意未退。
+                        </p>
                     </div>
                 </div>
             </div>
-            <h3 id="percent-filled">
-            </h3>
-            <p class="helper tap"><span style="color:#db4244;">紅色拉桿</span>填裝紅酒（點選選杯子重來)</p>
-            <button id="result" class="btn_result" style="margin:100px 0;">查看答案</button>
+        </section>
+        <!-- 休息多久 -->
+        <section id="section13" class="wire_layout section">
+            <div>
+                <h2>晨間喝酒數據</h2>
+            </div>
             <div id="info_answer">
-                <p>喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！</p>
+                <p>根據警察大學教授蔡中志研究，呼氣酒精濃度達到0.25mg/L的飲酒量，為「體重 X 0.8=飲酒毫升數 X 酒精濃度」。因此一個體重60公斤的人，大約喝了400毫升的紅酒，就會達到構成公共危險罪的標準。
+                </p>
                 <a title="Close" class="fancybox-item fancybox-close" href="javascript:;"></a>
             </div>
         </section>
         <!-- 休息多久 -->
-        <section id="section12" class="wire_layout section">
+        <section id="section14" class="wire_layout section">
             <div>
                 <h2>想想看</h2>
                 <p>喝完酒，最少需要休息幾個小時，才能讓體內酒精代謝完畢？</p>
@@ -197,13 +224,13 @@
                 <button id="result1" class="btn_result">查看答案</button>
             </div>
             <div id="info_answer1">
-                <p>喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！</p>
+                <p>喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！喝死你！
+                </p>
                 <a title="Close" class="fancybox-item fancybox-close" href="javascript:;"></a>
             </div>
         </section>
-        
         <!-- 道路交通條例修正 -->
-        <section id="section13" class="wire_layout section">
+        <section id="section15" class="wire_layout section">
             <h2>道路交通條例修正</h2>
             <div class="inner_layout">
                 <div class="flex_layout">
@@ -211,11 +238,15 @@
                         <div class="flex_layout">
                             <div class="cut_one">
                                 <figure id="hammer">
-                                    <img src="img/hammer.png" alt="">
+                                    <img data-aos="zoom-in" src="img/hammer.png" alt="">
                                 </figure>
                             </div>
                             <div class="cut_two">
-                                <p>為宣導酒後不開車，並達到<span class="hightlight">「酒駕零容忍」</span>目標，立法院在今年初三讀通過《道路交通管理處罰條例》修正案，未來酒駕肇事致人重傷或死亡者，<span class="hightlight">車輛將被沒入</span>；汽機車酒駕處罰則採分流制度。</p><p> 另外，條文也新增<span class="hightlight">「同車共責」</span>的連坐條款，和要求酒駕累犯強制加裝<span class="hightlight">「酒精鎖」</span>。
+                                <p>為宣導酒後不開車，並達到<span
+                                        class="hightlight">「酒駕零容忍」</span>目標，立法院在今年初三讀通過《道路交通管理處罰條例》修正案，未來酒駕肇事致人重傷或死亡者，<span
+                                        class="hightlight">車輛將被沒入</span>；汽機車酒駕處罰則採分流制度。</p>
+                                <p> 另外，條文也新增<span class="hightlight">「同車共責」</span>的連坐條款，和要求酒駕累犯強制加裝<span
+                                        class="hightlight">「酒精鎖」</span>。
                                 </p>
                             </div>
                         </div>
@@ -224,7 +255,7 @@
             </div>
         </section>
         <!-- 道路交通條例修正 -->
-        <section id="section14" class="wire_layout section">
+        <section id="section16" class="wire_layout section">
             <h2>道路交通條例修正/圖表</h2>
             <div class="inner_layout">
                 <div class="flex_layout">
@@ -241,36 +272,62 @@
             </div>
         </section>
         <!-- 同車共責 -->
-        <section id="section15" class="wire_layout section">
+        <section id="section17" class="wire_layout section">
             <h2>同車共責</h2>
             <div class="inner_layout">
                 <div class="flex_layout">
+
                     <div class="law two-three">
-                        <p>此次修法新增「同車共責」部分，是仿效日本制度<span class="mbblcok">未來汽機車駕駛人經酒測後
-                            所含酒精濃度達每公升0.25毫克</span></p>
-                        <div class="flex_layout">
-                            <div class="car_text carps" style="margin-bottom:120px">
+                        <p style="margin-bottom: 10px;">此次修法新增「同車共責」部分，是仿效日本制度但年滿70歲、心智障礙或汽車運輸業的乘客，不在此限</p>
+                        <p class="mbblcok">未來汽機車駕駛人經酒測後所含酒精濃度達每公升0.25毫克</p>
+                        <p></p>
+                        <div class="flex_layout fullscreen">
+                            <div data-aos="flip-up" data-aos-duration="3000" data-aos-delay="1000"
+                                class="car_text carps">
                                 年滿18歲的同車乘客將處<br>
                                 600元～3000元罰鍰
                             </div>
                             <div class="car_img">
-                                <figure style="margin: auto">
-                                    <img src="img/car.svg" alt="">
+                                <figure style="margin: 30px auto 0;">
+                                    <img data-aos="zoom-in-down" data-aos-duration="3000" src="img/car.svg" alt="car">
                                 </figure>
-                                <div>但年滿70歲、心智障礙或汽車運輸業的乘客，不在此限</div>
                             </div>
-                            <div class="car_text pcblock">
+                            <div data-aos="flip-up" data-aos-duration="3000" data-aos-delay="1500"
+                                class="car_text pcblock">
                                 未來汽機車駕駛人經酒測後<br>
                                 所含酒精濃度達每公升0.25毫克
-                            </div>  
+                            </div>
                         </div>
-                    </div>  
+                        <figure class="date">
+                            <img data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="2000" src="img/date.svg"
+                                alt="date">
+                        </figure>
+                        <p class="pcblock_m" style="margin-top:100px">
+                            這種處罰方式，是為了落實「預防酒駕人人有責」的精神，在酒醉者抱持僥倖心態上路前，透過同儕監督加以防範。</p>
+                        <div class="flex_layout mobilescreen">
+                            <div data-aos="zoom-in-up" data-aos-duration="3000" data-aos-delay="1000"
+                                class="car_text_m carps_m">
+                                年滿18歲的同車乘客將處<br>
+                                600元～3000元罰鍰
+                            </div>
+                            <div class="car_img_m">
+                                <figure style="margin: auto">
+                                    <img data-aos="zoom-in-down" data-aos-duration="3000"
+                                        data-aos-anchor-placement="top-bottom" src="img/car.svg" alt="car">
+                                </figure>
+                            </div>
+                            <div class="car_text_m pcblock_m">
+                                未來汽機車駕駛人經酒測後<br>
+                                所含酒精濃度達每公升0.25毫克
+                            </div>
+                            <p>這種處罰方式，是為了落實「預防酒駕人人有責」的精神，在酒醉者抱持僥倖心態上路前，透過同儕監督加以防範。</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- 同車共責 -->
-        <section id="section16" class="wire_layout section">
-            <h2>同車共責</h2>
+        <section id="section18" class="wire_layout section">
             <div class="inner_layout">
                 <div class="flex_layout">
                     <div class="law two-three">
@@ -286,8 +343,7 @@
             </div>
         </section>
         <!-- 同車共責 -->
-        <section id="section17" class="wire_layout section">
-            <h2>同車共責</h2>
+        <section id="section19" class="wire_layout section">
             <div class="inner_layout">
                 <div class="flex_layout">
                     <div class="law two-three">
@@ -300,7 +356,7 @@
             </div>
         </section>
         <!-- 酒精鎖 -->
-        <section id="section18" class="wire_layout section">
+        <section id="section20" class="wire_layout section">
             <h2>酒精鎖</h2>
             <div class="inner_layout">
                 <div class="flex_layout">
@@ -313,8 +369,7 @@
             </div>
         </section>
         <!-- 酒精鎖 -->
-        <section id="section19" class="wire_layout section">
-            <h2>酒精鎖</h2>
+        <section id="section21" class="wire_layout section">
             <div class="inner_layout">
                 <div class="flex_layout">
                     <div class="law two-three">
@@ -326,20 +381,20 @@
             </div>
         </section>
         <!-- 酒精鎖 -->
-        <section id="section20" class="wire_layout section">
-            <h2>酒精鎖</h2>
+        <section id="section22" class="wire_layout section">
             <div class="inner_layout">
                 <div class="flex_layout">
                     <div class="law two-three">
                         <p>
-                            酒精鎖在多個國家已經普遍使用，包括美國 50 個州皆通過法律，要求部分酒駕者的車輛加裝；而歐盟國家，如法國、比利時、奧地利、波蘭、丹麥、瑞典、芬蘭等國，除了針對酒駕犯設有相關措施，也要求部份職業駕駛強制裝設酒精鎖。
+                            酒精鎖在多個國家已經普遍使用，包括美國 50
+                            個州皆通過法律，要求部分酒駕者的車輛加裝；而歐盟國家，如法國、比利時、奧地利、波蘭、丹麥、瑞典、芬蘭等國，除了針對酒駕犯設有相關措施，也要求部份職業駕駛強制裝設酒精鎖。
                         </p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- 代駕制度 -->
-        <section id="section21" class="wire_layout section">
+        <section id="section23" class="wire_layout section">
             <h2>代駕制度</h2>
             <div class="inner_layout">
                 <div class="flex_layout">
@@ -353,8 +408,7 @@
             </div>
         </section>
         <!-- 代駕制度 -->
-        <section id="section22" class="wire_layout section">
-            <h2>代駕制度</h2>
+        <section id="section24" class="wire_layout section">
             <div class="inner_layout">
                 <div class="flex_layout">
                     <div class="law two-three">
@@ -367,7 +421,7 @@
             </div>
         </section>
         <!-- 結論 -->
-        <section id="section23" class="wire_layout section">
+        <section id="section25" class="wire_layout section">
             <h2>結論</h2>
             <div class="inner_layout">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, voluptatum
@@ -387,18 +441,20 @@
     </div>
     <!-- jqCDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <!-- fullPage_js -->
-    <script src="js/fullpage.js"></script>
     <!-- fancybox_js -->
     <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/jquery.fancybox-media.js"></script>
     <!-- chart_js -->
     <script src="https://cdn.jsdelivr.net/npm/apexcharts@2.1.2"></script>
     <script src="js/chart.js"></script>
-    <!-- pour_js -->
-    <script src="js/pour.js"></script>
+    <!-- aos_js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- my_js -->
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
