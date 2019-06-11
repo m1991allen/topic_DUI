@@ -34,6 +34,7 @@ h2 {
   font-size: 1.6em;
   line-height: 70px;
   letter-spacing: 10px;
+  text-indent: 10px;
   text-align: center;
   color: white;
   font-family: "NotoSansCJKtc-Bold";
@@ -504,20 +505,6 @@ img {
   transition: 0.5s ease-in;
 }
 
-#mug-container {
-  /* position: absolute;
-  top: 50%;
-  left: 7%; */
-}
-
-@media screen and (max-width: 768px) {
-  #mug-container {
-    position: absolute;
-    top: 50%;
-    left: 0;
-  }
-}
-
 #mug {
   margin: 60px 0 0 40px;
   border: 14px solid #e8f9ff;
@@ -679,6 +666,14 @@ sup {
   }
 }
 
+.hightlight {
+  background-color: #fbb03b;
+  color: #101c22;
+  padding: 1px 0;
+  margin: 0 5px;
+  white-space: nowrap;
+}
+
 /* chart */
 
 #chart {
@@ -692,15 +687,16 @@ sup {
   border: 0;
 }
 
-/* 道路交通條例 */
+/* 道路交通條例修正 */
 
-#section15 h2 {
+#section15 h2, #section16 h2 {
   border: 3px solid white;
   border-radius: 10px;
   color: white;
-  width: 420px;
   margin: auto;
   margin-bottom: 20px;
+  padding: 0 10px;
+  display: inline-block;
 }
 
 #section15 p, #section16 p {
@@ -711,39 +707,39 @@ sup {
   cursor: pointer;
 }
 
+@media screen and (min-width:1000px) {
+  .list_img {
+    width: 70%;
+    margin: auto;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .cut_one figure {
     width: 40%;
     margin: auto;
   }
-  #section15 h2 {
-    width: 80%;
+  #section15 h2, #section16 h2 {
+    width: 70%;
   }
 }
 
 @media screen and (max-width: 400px) {
-  #section15 h2 {
+  #section15 h2, #section16 h2 {
     width: 100%;
     border: none;
   }
 }
 
-.hightlight {
-  background-color: #fbb03b;
-  color: #101c22;
-  padding: 1px 0;
-  margin: 0 5px;
-  white-space: nowrap;
-}
-
 /* 同車共責 */
 
-#section17 h2, #section18 h2, #section19 h2 {
-  border: 8px solid #fbb03b;
+#section17 h2 {
+  border: 3px solid #fbb03b;
   border-radius: 10px;
   color: #fbb03b;
-  width: 250px;
   margin: auto;
+  display: inline-block;
+  padding: 0 10px;
 }
 
 .date {
@@ -1053,4 +1049,31 @@ sup {
   .area1, .area2, .area3 {
     width: 190px;
   }
+}
+
+/* 酒精鎖 */
+
+#section20 h2 {
+  border: 3px solid white;
+  border-radius: 10px;
+  color: white;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 250px;
+}
+
+#section20 p, #section21 p, #section22 p {
+  color: white;
+}
+
+.dashboard {
+  position: relative
+}
+
+.dashboard img:nth-last-child(1) {
+  position: absolute;
+  width: 50%;
+  position: absolute;
+  top: 15%;
+  left: 45%;
 }
