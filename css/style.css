@@ -1101,17 +1101,47 @@ sup {
   }
 }
 
-/* chart */
+/* 數據 */
 
-#chart {
-  max-width: 760px;
-  margin: 35px auto;
-  opacity: 0.9;
+#section6 h2, #section7 h2, #section8 h2, #section9 h2 {
+  border: 3px solid white;
+  border-radius: 10px;
+  color: white;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  display: inline-block;
 }
 
-#timeline-chart .apexcharts-toolbar {
-  opacity: 1;
-  border: 0;
+.chart_layout figure {
+  width: 220px;
+  transition: .2s;
+}
+
+@media screen and (max-width:1400px) {
+  .chart_layout figure {
+    width: 160px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .chart_layout figure {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .chart_layout {
+    display: flex;
+  }
+  .chart_layout figure {
+    width: 50%;
+    padding: 10% !important;
+  }
+}
+
+#section8 figure {
+  padding: 0 10%;
 }
 
 /* 道路交通條例修正 */
