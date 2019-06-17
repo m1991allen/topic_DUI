@@ -41,4 +41,19 @@ $(document).ready(function () {
   $("#ask1,#ask2,#ask3").mouseleave(function () {
     $("#ask1_hover,#ask2_hover,#ask3_hover").css("display", "none");
   });
+
+  $("#set1").mouseover(function () {
+    $("#lockMap>img").attr("src", "img/map1.png");
+  });
+  $("#set2").mouseover(function () {
+    $("#lockMap>img").attr("src", "img/map2.png");
+  });
+  $("#set3").mouseover(function () {
+    $("#lockMap>img").attr("src", "img/map3.png");
+  });
 });
+
+function restTime(setting) {
+  myOption = setting;
+  document.getElementById("ans_sug").innerHTML = myOption;
+}

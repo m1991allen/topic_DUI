@@ -187,6 +187,107 @@ img {
   }
 }
 
+/* 人物訪談 */
+
+.ask_block {
+  width: 50%;
+  position: relative;
+}
+
+.ask_block a {
+  background-size: cover;
+  display: block;
+  width: 100%;
+  border: 3px solid #101b22;
+  background-position: center;
+  cursor: pointer;
+  color: white;
+  box-shadow: 6px 8px 10px black;
+}
+
+.ask_block a p {
+  color: white;
+}
+
+.ask_block #ask1 {
+  background-image: url(../img/asker1.jpg);
+  background-position-x: 70%;
+  height: 600px;
+}
+
+.ask_block #ask2 {
+  background-image: url(../img/asker2.jpg);
+  height: 300px;
+}
+
+.ask_block #ask3 {
+  background-image: url(../img/asker3.jpg);
+  height: 300px;
+}
+
+#ask1_hover {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  left: 0;
+  top: 0;
+  background-color: #000000b5;
+  transition: .3s;
+}
+
+#ask2_hover {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  left: 0;
+  top: 0;
+  background-color: #000000b5;
+  transition: .3s;
+}
+
+#ask3_hover {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  left: 0;
+  top: 50%;
+  background-color: #000000b5;
+  transition: .3s;
+}
+
+.ask_content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ask_content h3 {
+  letter-spacing: 3px;
+}
+
+.ask_content h4 {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 24px;
+  border-bottom: 1px solid white;
+  width: 70%;
+  padding-bottom: 3px;
+  margin: auto;
+}
+
+.ask_content p {
+  font-size: 1em;
+}
+
+@media screen and (max-width:768px) {
+  .ask_block {
+    width: 100%;
+  }
+}
+
 /* main */
 
 #section25 {
@@ -245,10 +346,6 @@ img {
   padding: 3%;
   text-align: center;
   color: #fbb03b;
-}
-
-.flex_layout ul {
-  line-height: 35px;
 }
 
 .one-three {
@@ -344,14 +441,15 @@ img {
 
 /* 同車共責圖表 */
 
-ul li {
+.chart_ul li {
   list-style-type: none;
 }
 
-ul {
+.chart_ul {
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid;
+  line-height: 35px;
 }
 
 .year {
@@ -1113,6 +1211,10 @@ sup {
   display: inline-block;
 }
 
+#section6 figure {
+  padding: 10%;
+}
+
 .chart_layout figure {
   width: 220px;
   transition: .2s;
@@ -1140,8 +1242,16 @@ sup {
   }
 }
 
-#section8 figure {
+#section8 figure, #section9 figure {
   padding: 0 10%;
+}
+
+#section8 p {
+  color: white;
+}
+
+#section9 p {
+  padding: 5% 0;
 }
 
 /* 道路交通條例修正 */
@@ -1162,7 +1272,7 @@ sup {
 
 #section15 figure {
   cursor: pointer;
-  margin: auto;
+  width: 70%;
 }
 
 @media screen and (min-width:1000px) {
@@ -1189,8 +1299,65 @@ sup {
   }
 }
 
+.roadlaw {
+  position: relative;
+  padding: 5% 0;
+}
+
+.roadlaw .roadlaw_content {
+  position: absolute;
+  top: 10%;
+  right: 0;
+}
+
+.roadlaw p {
+  padding: 5% 0;
+}
+
 #hammer img {
   width: 300px;
+}
+
+.color_block {
+  display: flex;
+}
+
+.color_block span {
+  width: 100px;
+  height: 10px;
+  margin: 0 10px;
+}
+
+.color_b1 {
+  background-color: #D37197;
+}
+
+.color_b2 {
+  background-color: #3FA3BA;
+}
+
+.color_b3 {
+  background-color: #9EBF64;
+}
+
+.color_b4 {
+  background-color: #FBB03B;
+}
+
+.color_b5 {
+  background-color: #9C5794;
+}
+
+@media screen and (max-width:1250px) {
+  .roadlaw .roadlaw_content {
+    position: relative;
+  }
+  #section15 figure {
+    width: 100%;
+  }
+  .color_block span {
+    display: none;
+  }
 }
 
 /* 同車共責 */
@@ -1214,7 +1381,7 @@ sup {
 /* 同車共責pc */
 
 .flex_layout .car_text {
-  width: 30%;
+  width: 20%;
   color: black;
   padding: 10px;
   background-color: #fbb03b;
@@ -1430,10 +1597,30 @@ sup {
   }
 }
 
+#ans_sug {
+  color: #fffe00;
+  font-size: 1.4em;
+}
+
 /* 問題 */
 
-#section11 {
-  padding: 0 0 0 3%;
+#section10 {
+  width: 100%;
+  padding: 3% 0 0 0 !important;
+}
+
+.drunk {
+  width: 100%;
+}
+
+.drunker img {
+  padding: 0px;
+}
+
+@media screen and (max-width:768px) {
+  #section10 p {
+    padding: 10% 10% !important;
+  }
 }
 
 .flex_layout_noblock {
@@ -1524,6 +1711,39 @@ sup {
   }
 }
 
+/* 隔夜酒駕 */
+
+#section11 p {
+  padding: 5% 0;
+}
+
+#section11 figure {
+  padding: 0 10%;
+}
+
+.color1, .color2 {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 20px 0;
+  font-size: 1.3em;
+}
+
+.color1::before, .color2::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.color1::before {
+  background-color: #2E465F;
+}
+
+.color2::before {
+  background-color: #8a97a5;
+}
+
 /* 酒精鎖 */
 
 #section20 h2, #section22 h2 {
@@ -1546,13 +1766,21 @@ sup {
 .dashboard img:nth-last-child(1) {
   position: absolute;
   width: 50%;
-  position: absolute;
   top: 15%;
   left: 45%;
 }
 
 .drivecar {
   position: relative;
+  overflow-x: hidden;
+}
+
+.drivecar:nth-child(1) {
+  height: 1300px;
+}
+
+.drivecar img {
+  padding: 0;
 }
 
 .drivecar img:nth-last-child(1) {
@@ -1562,6 +1790,7 @@ sup {
   animation-name: cardown;
   animation-duration: 5s;
   animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
 }
 
 @keyframes cardown {
@@ -1569,7 +1798,19 @@ sup {
     top: 0%;
   }
   to {
-    top: 95%;
+    top: 100%;
+  }
+}
+
+@media screen and (max-width:1640px) {
+  .drivecar img:nth-last-child(1) {
+    width: 130px
+  }
+}
+
+@media screen and (max-width:1290px) {
+  .drivecar img:nth-last-child(1) {
+    width: 90px
   }
 }
 
@@ -1666,122 +1907,45 @@ sup {
   margin-left: 50%;
 }
 
-/* 問問題 */
+/* 酒精鎖地圖 */
 
-#section10 {
-  width: 100%;
-  padding: 3% 0 0 0 !important;
+.situation {
+  padding: 3% 0;
+  justify-content: space-around;
 }
 
-.drunk {
-  width: 100%;
-}
-
-.drunker img {
-  padding: 0px;
-}
-
-@media screen and (max-width:768px) {
-  #section10 p {
-    padding: 10% 10% !important;
-  }
-}
-
-/* 人物訪談 */
-
-.ask_block {
-  width: 50%;
-  position: relative;
-}
-
-.ask_block a {
-  background-size: cover;
-  display: block;
-  width: 100%;
-  border: 3px solid black;
-  background-position: center;
+.situation button {
+  width: 30%;
+  border-radius: 5px;
+  box-shadow: 6px 7px 2px black;
+  color: white;
+  transition: .3s;
   cursor: pointer;
-  color: white;
+  height: 50px;
 }
 
-.ask_block a p {
-  color: white;
+.situation button:hover {
+  transform: scale(1.1)
 }
 
-.ask_block #ask1 {
-  background-image: url(../img/asker1.jpg);
-  height: 600px;
+.situation #set1 {
+  background-color: #FFCA05;
+  border: 1px solid #FFCA05;
 }
 
-.ask_block #ask2 {
-  background-image: url(../img/asker2.jpg);
-  height: 300px;
+.situation #set2 {
+  background-color: #FBB03B;
+  border: 1px solid #FBB03B;
 }
 
-.ask_block #ask3 {
-  background-image: url(../img/asker3.jpg);
-  height: 300px;
+.situation #set3 {
+  background-color: #CC4040;
+  border: 1px solid #CC4040;
 }
 
-#ask1_hover {
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: 600px;
-  left: 0;
-  top: 0;
-  background-color: #000000b5;
-  transition: .3s;
-}
-
-#ask2_hover {
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: 300px;
-  left: 0;
-  top: 0;
-  background-color: #000000b5;
-  transition: .3s;
-}
-
-#ask3_hover {
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: 300px;
-  left: 0;
-  top: 50%;
-  background-color: #000000b5;
-  transition: .3s;
-}
-
-.ask_content {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.ask_content h3 {
-  letter-spacing: 3px;
-}
-
-.ask_content h4 {
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 24px;
-  border-bottom: 1px solid white;
-  width: 70%;
-  padding-bottom: 3px;
-  margin: auto;
-}
-
-.ask_content p {
-  font-size: 1em;
-}
-
-@media screen and (max-width:768px) {
-  .ask_block {
-    width: 100%;
+@media screen and (max-width:500px) {
+  .situation button {
+    width: 100% !important;
+    margin: 10px 0;
   }
 }
