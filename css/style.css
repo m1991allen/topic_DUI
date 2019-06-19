@@ -44,7 +44,6 @@ h3 {
   font-size: 1.4em;
   line-height: 60px;
   text-align: center;
-  text-align: center;
   color: white;
 }
 
@@ -76,15 +75,15 @@ img {
   max-width: 100%;
 }
 
-#section25 {
+#section_end {
   background-color: #000;
 }
 
-#section2, #section3, #section4, #section5, #section10, #section11, #section23, #section24 {
+#section2, #section7, #section10, #section17, #section19, #section20 {
   background-color: #101c22;
 }
 
-#section6, #section7, #section8, #section9, #section12, #section13, #section14, #section15, #section16, #section17, #section18, #section19, #section20, #section21, #section22 {
+#section3, #section4, #section5, #section6, #section8, #section9, #section11, #section12, #section13, #section14, #section15, #section16, #section18 {
   background-color: #0a222d;
 }
 
@@ -108,8 +107,50 @@ img {
   margin: auto;
 }
 
+/* main */
+
 .section {
   vertical-align: middle;
+}
+
+#section_end {
+  background-image: url(../img/bg_footer.png);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  color: white;
+}
+
+.wire_layout {
+  padding: 3% 0;
+  text-align: center;
+}
+
+.inner_layout {
+  width: 80%;
+  margin: auto;
+}
+
+.flex_layout {
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 100%;
+}
+
+.flex_layout .person img {
+  width: 65%;
+  border-radius: 200px;
+  padding: 5%;
+}
+
+.flex_layout .person p {
+  padding: 3%;
+}
+
+.flex_layout .person a {
+  color: brown;
+  text-decoration: none;
 }
 
 /* scroll down icon */
@@ -288,48 +329,6 @@ img {
   }
 }
 
-/* main */
-
-#section25 {
-  background-image: url(../img/bg_footer.png);
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  color: white;
-}
-
-.wire_layout {
-  padding: 3% 0;
-  text-align: center;
-}
-
-.inner_layout {
-  width: 80%;
-  margin: auto;
-}
-
-.flex_layout {
-  display: flex;
-  align-items: center;
-  color: white;
-  width: 100%;
-}
-
-.flex_layout .person img {
-  width: 65%;
-  border-radius: 200px;
-  padding: 5%;
-}
-
-.flex_layout .person p {
-  padding: 3%;
-}
-
-.flex_layout .person a {
-  color: brown;
-  text-decoration: none;
-}
-
 /* 同車共責 */
 
 .flex_layout img {
@@ -338,14 +337,13 @@ img {
 }
 
 .flex_layout h3 {
-  padding-left: 3%;
   font-size: 1.4em;
 }
 
 .flex_layout p {
   padding: 3%;
   text-align: center;
-  color: #fbb03b;
+  color: white;
 }
 
 .one-three {
@@ -403,11 +401,6 @@ img {
   #full-screen {
     display: none;
   }
-}
-
-#section5 p {
-  color: white;
-  text-align: center;
 }
 
 .clock_layout1 {
@@ -472,58 +465,39 @@ img {
 
 .year_case {
   position: absolute;
-  top: 35%;
-  left: 55%;
+  bottom: 0;
+  left: 50%;
+  border: 1px solid;
+  border-radius: 5px;
 }
 
 .year_case h3 {
   color: #fbb03b;
-  font-size: 1.2em;
   display: flex;
   align-items: center;
+  width: 300px;
+  margin: auto;
 }
 
 .year_case h4 {
   color: #fbb03b;
-  font-size: 1em;
+  font-size: 1.3em;
   border-bottom: 1px solid white;
   padding-bottom: 10px;
   line-height: 30px;
 }
 
-.year_case p, .year_ps p {
+.year_case p {
   color: white;
-  font-size: 1em;
   line-height: 30px;
 }
 
 .year_case img {
-  width: 30%;
-  padding-left: 10%;
+  width: 100px;
 }
 
 .year_case span {
   width: 60%;
-  text-align: left;
-}
-
-.year_ps {
-  background-color: #EFA543;
-  display: inline-block;
-  border-radius: 85px;
-  position: absolute;
-  z-index: 2 !important;
-  width: 50%;
-  top: 70%;
-}
-
-.year_ps::before {
-  content: "";
-  border-style: solid;
-  border-width: 0px 60px 50px 40px;
-  border-color: transparent #EFA543 transparent transparent;
-  position: absolute;
-  bottom: -35px;
 }
 
 .truck {
@@ -536,16 +510,15 @@ img {
   .year_ps {
     display: none;
   }
+  .year_case {
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
 }
 
 @media screen and (max-width:768px) {
   .truck {
-    display: none;
-  }
-}
-
-@media screen and (max-width:600px) {
-  .year_case {
     display: none;
   }
 }
@@ -1201,17 +1174,7 @@ sup {
 
 /* 數據 */
 
-#section6 h2, #section7 h2, #section8 h2, #section9 h2 {
-  border: 3px solid white;
-  border-radius: 10px;
-  color: white;
-  margin: auto;
-  margin-bottom: 20px;
-  padding: 0 10px;
-  display: inline-block;
-}
-
-#section6 figure {
+#section3 figure {
   padding: 10%;
 }
 
@@ -1242,35 +1205,17 @@ sup {
   }
 }
 
-#section8 figure, #section9 figure {
+#section5 figure, #section6 figure {
   padding: 0 10%;
 }
 
-#section8 p {
-  color: white;
-}
-
-#section9 p {
+#section6 p {
   padding: 5% 0;
 }
 
 /* 道路交通條例修正 */
 
-#section15 h2, #section16 h2 {
-  border: 3px solid white;
-  border-radius: 10px;
-  color: white;
-  margin: auto;
-  margin-bottom: 20px;
-  padding: 0 10px;
-  display: inline-block;
-}
-
-#section15 p, #section16 p {
-  color: white;
-}
-
-#section15 figure {
+#section11 figure {
   cursor: pointer;
   width: 70%;
 }
@@ -1287,13 +1232,13 @@ sup {
     width: 40%;
     margin: auto;
   }
-  #section15 h2, #section16 h2 {
+  #section11 h2, #section12 h2 {
     width: 70%;
   }
 }
 
 @media screen and (max-width: 400px) {
-  #section15 h2, #section16 h2 {
+  #section11 h2, #section12 h2 {
     width: 100%;
     border: none;
   }
@@ -1323,8 +1268,8 @@ sup {
 }
 
 .color_block span {
-  width: 100px;
-  height: 10px;
+  width: 70px;
+  height: 7px;
   margin: 0 10px;
 }
 
@@ -1352,7 +1297,7 @@ sup {
   .roadlaw .roadlaw_content {
     position: relative;
   }
-  #section15 figure {
+  #section11 figure {
     width: 100%;
   }
   .color_block span {
@@ -1361,15 +1306,6 @@ sup {
 }
 
 /* 同車共責 */
-
-#section17 h2 {
-  border: 3px solid #fbb03b;
-  border-radius: 10px;
-  color: #fbb03b;
-  margin: auto;
-  display: inline-block;
-  padding: 0 10px;
-}
 
 .date {
   width: 100px;
@@ -1604,7 +1540,7 @@ sup {
 
 /* 問題 */
 
-#section10 {
+#section7 {
   width: 100%;
   padding: 3% 0 0 0 !important;
 }
@@ -1618,7 +1554,7 @@ sup {
 }
 
 @media screen and (max-width:768px) {
-  #section10 p {
+  #section7 p {
     padding: 10% 10% !important;
   }
 }
@@ -1692,14 +1628,14 @@ sup {
   bottom: -2px;
 }
 
-@media screen and (max-width:1040px) {
+@media screen and (max-width:1080px) {
   .area1:before, .area2:before, .area3:before {
     width: 300px;
     border-width: 0;
   }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1080px) {
   .area1, .area2, .area3 {
     width: 300px;
   }
@@ -1711,13 +1647,35 @@ sup {
   }
 }
 
+/* 倒酒 */
+
+.pour img {
+  padding: 0 10px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.pour img:nth-child(1) {
+  transform: rotateY(180deg);
+}
+
+.pour img:nth-child(2) {
+  transform: rotate(-45deg);
+  margin-left: 40px;
+  transition: .3s;
+}
+
+.pour img:nth-child(2):active {
+  transform: rotate(-80deg);
+}
+
 /* 隔夜酒駕 */
 
-#section11 p {
+#section9 p {
   padding: 5% 0;
 }
 
-#section11 figure {
+#section9 figure {
   padding: 0 10%;
 }
 
@@ -1746,19 +1704,6 @@ sup {
 
 /* 酒精鎖 */
 
-#section20 h2, #section22 h2 {
-  border: 3px solid white;
-  border-radius: 10px;
-  color: white;
-  margin: auto;
-  margin-bottom: 20px;
-  width: 250px;
-}
-
-#section20 p, #section21 p, #section22 p {
-  color: white;
-}
-
 .dashboard {
   position: relative
 }
@@ -1786,6 +1731,7 @@ sup {
 .drivecar img:nth-last-child(1) {
   position: absolute;
   top: 0;
+  right: 50px;
   width: 100px;
   animation-name: cardown;
   animation-duration: 5s;
@@ -1948,4 +1894,98 @@ sup {
     width: 100% !important;
     margin: 10px 0;
   }
+}
+
+#lock {
+  cursor: pointer;
+  transition: .3s;
+}
+
+/* 酒精翻牌 */
+
+.card_flex {
+  justify-content: space-around;
+}
+
+.card {
+  background-color: #EBB044;
+  height: 500px;
+  width: 300px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: right center;
+  -moz-transform-origin: right center;
+  -o-transform-origin: right center;
+  transform-origin: right center;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card .card_bg {
+  background-color: #FFE1B6;
+  border: 3px solid;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  height: 90%;
+  width: 85%;
+}
+
+.card .card_bg .back {
+  -webkit-transform: rotateY( 180deg);
+  -moz-transform: rotateY( 180deg);
+  -o-transform: rotateY( 180deg);
+  transform: rotateY( 180deg);
+  position: absolute;
+  width: 83%;
+}
+
+.card .card_bg .card_cont {
+  display: block;
+  margin: auto;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card .card_bg .card_cont h3 {
+  color: #0a222d;
+}
+
+.card .card_bg .card_cont img {
+  padding: 0;
+}
+
+.card .card_bg .card_cont figcaption {
+  font-size: 1.3em;
+  margin-top: 20px;
+  color: #0A222D;
+  padding: 0 10px;
+}
+
+.card .card_bg .card_cont small {
+  line-height: 60px;
+  color: #0a222d;
+}
+
+.card.flipped {
+  -webkit-transform: translateX( -100%) rotateY( -180deg);
+  -moz-transform: translateX( -100%) rotateY( -180deg);
+  -o-transform: translateX( -100%) rotateY( -180deg);
+  transform: translateX( -100%) rotateY( -180deg);
 }
