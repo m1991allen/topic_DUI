@@ -79,11 +79,11 @@ img {
   background-color: #000;
 }
 
-#section2, #section7, #section10, #section17, #section19, #section20 {
+#section2, #section8, #section11, #section18, #section20, #section21 {
   background-color: #101c22;
 }
 
-#section3, #section4, #section5, #section6, #section8, #section9, #section11, #section12, #section13, #section14, #section15, #section16, #section18 {
+#section3, #section4, #section5, #section6, #section7, #section9, #section10, #section12, #section13, #section14, #section15, #section16, #section17, #section19 {
   background-color: #0a222d;
 }
 
@@ -109,8 +109,26 @@ img {
 
 /* main */
 
+* {
+  border: 1px solid red;
+}
+
 .section {
   vertical-align: middle;
+}
+
+.section h2 {
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 40%;
+  margin: 0 auto 5%;
+  /* white-space: nowrap; */
+}
+
+@media screen and (max-width:400px) {
+  .section h2 {
+    width: 90%;
+  }
 }
 
 #section_end {
@@ -466,7 +484,7 @@ img {
 .year_case {
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 40%;
   border: 1px solid;
   border-radius: 5px;
 }
@@ -520,6 +538,15 @@ img {
 @media screen and (max-width:768px) {
   .truck {
     display: none;
+  }
+  .year_case h3 {
+    width: auto;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .year_case img {
+    width: 64px;
   }
 }
 
@@ -956,12 +983,12 @@ img {
 
 @media screen and (max-width:400px) {
   #clock {
-    width: 16.875rem;
-    height: 16.875rem;
+    width: 14.875rem;
+    height: 14.875rem;
   }
   #clock::after {
-    top: 7.5rem;
-    left: 7.3rem;
+    top: 6.5rem;
+    left: 6.3rem;
   }
 }
 
@@ -978,7 +1005,7 @@ img {
   width: .5rem;
   height: 6.25rem;
   top: 3.8rem;
-  left: 10.2rem;
+  left: 10.35rem;
   background: #EBB044;
   z-index: 12;
   -moz-border-radius: .4rem;
@@ -1069,16 +1096,16 @@ img {
     width: 70%;
   }
   .hours {
-    top: 3.7rem;
-    left: 7.66rem;
+    top: 2.7rem;
+    left: 6.66rem;
   }
   .minutes {
-    top: 1.8rem;
-    left: 7.7rem;
+    top: 0.8rem;
+    left: 6.7rem;
   }
   .seconds {
-    top: 1.89rem;
-    left: 7.79rem;
+    top: 0.89rem;
+    left: 6.79rem;
   }
 }
 
@@ -1669,6 +1696,16 @@ sup {
   transform: rotate(-80deg);
 }
 
+@media screen and (max-width:420px) {
+  .pour img:nth-child(1) {
+    width: 80px;
+  }
+  .pour img:nth-child(2) {
+    width: 80px;
+    margin-left: 0px;
+  }
+}
+
 /* 隔夜酒駕 */
 
 #section9 p {
@@ -1988,4 +2025,11 @@ sup {
   -moz-transform: translateX( -100%) rotateY( -180deg);
   -o-transform: translateX( -100%) rotateY( -180deg);
   transform: translateX( -100%) rotateY( -180deg);
+}
+
+@media screen and (max-width:500px) {
+  .card {
+    width: 90%;
+    height: 520px;
+  }
 }
