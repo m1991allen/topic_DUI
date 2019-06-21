@@ -33,8 +33,8 @@ h1 {
 h2 {
   font-size: 1.6em;
   line-height: 70px;
-  letter-spacing: 10px;
-  text-indent: 10px;
+  letter-spacing: 6px;
+  text-indent: 6px;
   text-align: center;
   color: white;
   font-family: "NotoSansCJKtc-Bold";
@@ -48,7 +48,7 @@ h3 {
 }
 
 p {
-  font-size: 1.3em;
+  font-size: 1.1em;
   line-height: 35px;
   text-align: center;
   color: white;
@@ -59,12 +59,12 @@ a {
 }
 
 button {
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
 label {
   cursor: pointer;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
 ul li {
@@ -79,11 +79,11 @@ img {
   background-color: #000;
 }
 
-#section2, #section8, #section11, #section18, #section20, #section21 {
+#section2, #section8, #section11, #section18, #section20 {
   background-color: #101c22;
 }
 
-#section3, #section4, #section5, #section6, #section7, #section9, #section10, #section12, #section13, #section14, #section15, #section16, #section17, #section19 {
+#section3, #section4, #section5, #section6, #section7, #section9, #section10, #section12, #section13, #section14, #section15, #section16, #section17, #section19, #section21 {
   background-color: #0a222d;
 }
 
@@ -109,10 +109,6 @@ img {
 
 /* main */
 
-* {
-  border: 1px solid red;
-}
-
 .section {
   vertical-align: middle;
 }
@@ -121,11 +117,16 @@ img {
   border: 2px solid white;
   border-radius: 5px;
   width: 40%;
-  margin: 0 auto 5%;
-  /* white-space: nowrap; */
+  margin: 0 auto 20px;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:680px) {
+  .section h2 {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:480px) {
   .section h2 {
     width: 90%;
   }
@@ -483,10 +484,11 @@ img {
 
 .year_case {
   position: absolute;
-  bottom: 0;
+  top: 60%;
   left: 40%;
-  border: 1px solid;
+  border: 1px solid white;
   border-radius: 5px;
+  margin-bottom: 5%;
 }
 
 .year_case h3 {
@@ -499,7 +501,7 @@ img {
 
 .year_case h4 {
   color: #fbb03b;
-  font-size: 1.3em;
+  font-size: 1.1em;
   border-bottom: 1px solid white;
   padding-bottom: 10px;
   line-height: 30px;
@@ -1078,7 +1080,7 @@ img {
 
 .clockstyle {
   color: #FBB03B;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .sleeper {
@@ -1201,10 +1203,6 @@ sup {
 
 /* 數據 */
 
-#section3 figure {
-  padding: 10%;
-}
-
 .chart_layout figure {
   width: 220px;
   transition: .2s;
@@ -1232,19 +1230,50 @@ sup {
   }
 }
 
-#section5 figure, #section6 figure {
-  padding: 0 10%;
+#section3 figure, #section4 figure, #section6 figure, #section7 figure, #section15 figure {
+  width: 70%;
+  padding: 5% 0 0;
+  margin: auto;
 }
 
-#section6 p {
+@media screen and (max-width:560px) {
+  #section3 figure, #section4 figure, #section6 figure, #section7 figure, #section15 figure {
+    width: 100%;
+  }
+  .chart_ps {
+    width: 50% !important;
+  }
+}
+
+#section3 p, #section6 p {
   padding: 5% 0;
+}
+
+.section_mb {
+  display: none;
+  color: white;
+  text-align: left;
+}
+
+@media screen and (max-width:768px) {
+  .section_pc {
+    display: none;
+  }
+  .section_mb {
+    display: block;
+  }
+}
+
+.fig {
+  line-height: 30px;
 }
 
 /* 道路交通條例修正 */
 
-#section11 figure {
+#section12 figure {
   cursor: pointer;
   width: 70%;
+  margin: auto;
 }
 
 @media screen and (min-width:1000px) {
@@ -1259,13 +1288,13 @@ sup {
     width: 40%;
     margin: auto;
   }
-  #section11 h2, #section12 h2 {
+  #section12 h2, #section13 h2 {
     width: 70%;
   }
 }
 
 @media screen and (max-width: 400px) {
-  #section11 h2, #section12 h2 {
+  #section12 h2, #section13 h2 {
     width: 100%;
     border: none;
   }
@@ -1292,6 +1321,8 @@ sup {
 
 .color_block {
   display: flex;
+  margin: auto;
+  width: 90%;
 }
 
 .color_block span {
@@ -1332,19 +1363,10 @@ sup {
   }
 }
 
-/* 同車共責 */
-
-.date {
-  width: 100px;
-  float: right;
-  margin-top: 30px;
-  z-index: 3;
-}
-
 /* 同車共責pc */
 
 .flex_layout .car_text {
-  width: 20%;
+  width: 25%;
   color: black;
   padding: 10px;
   background-color: #fbb03b;
@@ -1353,172 +1375,17 @@ sup {
   position: relative;
 }
 
-.flex_layout .carps {
+.flex_layout .car_text::before {
   position: absolute;
-  left: 5%;
-}
-
-.flex_layout .carps::before {
-  content: "";
-  right: -230px;
-  border-style: solid;
-  border-width: 0 0 25px 235px;
-  border-color: transparent transparent transparent #fbb03b;
-  position: absolute;
-  z-index: 1;
-  transition: 1s;
-}
-
-.flex_layout .pcblock {
-  position: absolute;
-  right: 5%;
-}
-
-.flex_layout .pcblock::before {
-  content: "";
-  top: 0;
-  left: -290px;
-  border-style: solid;
-  border-width: 0px 285px 20px 10px;
-  border-color: transparent #fbb03b transparent transparent;
-  position: absolute;
-  transform: rotate(5deg);
-  transition: 1s;
 }
 
 .flex_layout .car_img {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-@media screen and (max-width: 1610px) {
-  .flex_layout .carps::before {
-    right: -195px;
-    border-width: 0px 0px 25px 200px;
-  }
-  .flex_layout .pcblock::before {
-    left: -210px;
-    border-width: 0px 240px 20px 10px;
-  }
-}
-
-@media screen and (max-width: 1420px) {
-  .flex_layout .carps::before {
-    right: -165px;
-    border-width: 0px 0px 25px 170px;
-  }
-  .flex_layout .pcblock::before {
-    left: -180px;
-    border-width: 0px 190px 20px 10px;
-  }
-}
-
-@media screen and (max-width: 1190px) {
-  .flex_layout .carps::before {
-    right: -130px;
-    border-width: 0px 0px 25px 140px;
-  }
-  .flex_layout .pcblock::before {
-    left: -130px;
-    border-width: 0px 130px 20px 10px;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  .flex_layout .carps::before {
-    right: -90px;
-    border-width: 0px 0px 25px 100px;
-  }
-  .flex_layout .pcblock::before {
-    left: -90px;
-    border-width: 0px 100px 20px 10px;
-  }
-}
-
-@media screen and (max-width: 769px) {
-  .flex_layout .carps::before {
-    right: -120px;
-    border-width: 0px 0px 25px 130px;
-  }
-  .flex_layout .pcblock::before {
-    left: -40px;
-    border-width: 0px 130px 20px 10px;
-  }
+  width: 50%;
 }
 
 @media screen and (max-width:768px) {
-  .date {
-    display: none;
-  }
-}
-
-/* 同車共責mobile */
-
-.flex_layout .car_text_m {
-  width: 30%;
-  color: black;
-  padding: 10px;
-  background-color: #fbb03b;
-  border-radius: 18px;
-  position: relative;
-}
-
-.flex_layout .carps_m::after {
-  content: "";
-  right: -93px;
-  border-style: solid;
-  border-width: 15px 0 0 100px;
-  border-color: transparent transparent transparent #fbb03b;
-  position: absolute;
-  z-index: 1;
-}
-
-.flex_layout .car_img_m {
-  width: 40%;
-}
-
-.mbblcok {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .mbblcok {
-    display: block;
-    margin-bottom: 15px;
-  }
-  .pcblock_m {
-    display: none;
-  }
-  .flex_layout .car_text_m, .flex_layout .car_img_m {
+  .flex_layout .car_text, .flex_layout .car_img {
     width: 100%;
-    margin-bottom: 0px !important;
-    z-index: 1;
-  }
-  .flex_layout .carps_m::after {
-    display: none;
-  }
-  .flex_layout .carps_m::before {
-    content: "";
-    bottom: -53px;
-    left: 180px;
-    border-style: solid;
-    border-width: 60px 20px 0px 20px;
-    border-color: #fbb03b transparent transparent transparent;
-    position: absolute;
-    transform: rotate(17deg);
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .flex_layout .carps_m::before {
-    left: 130px;
-  }
-}
-
-@media screen and (max-width: 415px) {
-  .flex_layout .carps_m::before {
-    left: 90px;
   }
 }
 
@@ -1618,11 +1485,11 @@ sup {
 .area1:before {
   content: "";
   border-style: solid;
-  border-width: 1px 0 5px 110px;
+  border-width: 1px 0 5px 310px;
   border-color: transparent transparent transparent #EDA03A;
   position: absolute;
-  right: -100px;
-  bottom: -2px;
+  right: -300px;
+  bottom: 40px;
 }
 
 .area2 {
@@ -1632,10 +1499,10 @@ sup {
 .area2:before {
   content: "";
   border-style: solid;
-  border-width: 1px 0 5px 110px;
+  border-width: 1px 0 5px 180px;
   border-color: transparent transparent transparent #EDA03A;
   position: absolute;
-  right: -90px;
+  right: -160px;
   top: 0;
 }
 
@@ -1648,11 +1515,12 @@ sup {
 .area3:before {
   content: "";
   border-style: solid;
-  border-width: 1px 110px 7px 0px;
+  border-width: 1px 280px 7px 0px;
   border-color: transparent #EDA03A transparent transparent;
   position: absolute;
-  left: -100px;
-  bottom: -2px;
+  left: -220px;
+  bottom: 90px;
+  transform: rotate(36deg);
 }
 
 @media screen and (max-width:1080px) {
@@ -1708,27 +1576,25 @@ sup {
 
 /* 隔夜酒駕 */
 
-#section9 p {
-  padding: 5% 0;
+#section10 figure {
+  width: 90%;
+  padding: 10%;
+  margin: auto;
 }
 
-#section9 figure {
-  padding: 0 10%;
-}
-
-.color1, .color2 {
+.color1, .color2, .color3, .color4 {
   display: flex;
   align-items: center;
   margin: auto;
   padding: 20px 0;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
-.color1::before, .color2::before {
+.color1::before, .color2::before, .color3::before, .color4::before {
   content: "";
   width: 50px;
   height: 50px;
-  margin: 10px;
+  margin-right: 10px;
 }
 
 .color1::before {
@@ -1737,6 +1603,20 @@ sup {
 
 .color2::before {
   background-color: #8a97a5;
+}
+
+.color3::before {
+  background-color: #EFA543;
+}
+
+.color4::before {
+  background-color: #CC4040;
+}
+
+@media screen and (max-width:500px) {
+  #section10 figure {
+    width: 100%;
+  }
 }
 
 /* 酒精鎖 */
@@ -2009,7 +1889,7 @@ sup {
 }
 
 .card .card_bg .card_cont figcaption {
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin-top: 20px;
   color: #0A222D;
   padding: 0 10px;
@@ -2031,5 +1911,25 @@ sup {
   .card {
     width: 90%;
     height: 520px;
+  }
+}
+
+/* 拒測 */
+
+#section21 figure img {
+  width: 100px;
+}
+
+.punish {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+@media screen and (max-width:768px) {
+  #section21 figure img {
+    width: 100%;
   }
 }
