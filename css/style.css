@@ -1319,6 +1319,7 @@ sup {
 .drivecar {
   position: relative;
   overflow: hidden;
+  height: 1300px;
 }
 
 .drivecar img {
