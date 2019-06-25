@@ -28,14 +28,23 @@ $(document).ready(function () {
   // 答案
   $("#result").click(function () {
     $("#info_answer").css("display", "block");
+    $(".mask").css("display", "block")
   });
   $("#result1").click(function () {
     $("#info_answer1").css("display", "block");
+    $(".mask").css("display", "block")
+  });
+
+  $(".mask").click(function () {
+    $(".mask").css("display", "none");
+    $("#info_answer").css("display", "none");
+    $("#info_answer1").css("display", "none");
   });
 
   // 燈箱關閉
   $(".fancybox-close").click(function () {
     $("#info_answer, #info_answer1").css("display", "none");
+    $(".mask").css("display", "none");
   });
 
   // 人物訪談
@@ -51,6 +60,13 @@ $(document).ready(function () {
   $("#ask1,#ask2,#ask3").mouseleave(function () {
     $("#ask1_hover,#ask2_hover,#ask3_hover").css("display", "none");
   });
+
+  $(".yt_box").mouseenter(function () {
+    $(".yt_box>a").show(300);
+  })
+  $(".yt_box").mouseleave(function () {
+    $(".yt_box>a").hide(300);
+  })
 
   // 酒精鎖地圖
   $("#set1").mouseover(function () {
@@ -95,4 +111,5 @@ $(document).ready(function () {
   $('.card').click(function (event) {
     $(event.currentTarget).toggleClass('flipped');
   });
+
 })

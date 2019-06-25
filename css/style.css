@@ -21,6 +21,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   box-sizing: border-box;
 }
 
+body {
+  position: relative;
+}
+
 h1 {
   font-size: 1.8em;
   line-height: 100px;
@@ -79,11 +83,11 @@ img {
   background-color: #000;
 }
 
-#section2, #section8, #section11, #section20, #section_end {
+#section2, #section8, #section11, #section15, #section20, #section_end {
   background-color: #101c22;
 }
 
-#section3, #section4, #section5, #section6, #section7, #section9, #section10, #section12, #section13, #section14, #section15, #section16, #section17, #section18, #section19, #section21 {
+#section3, #section4, #section5, #section6, #section7, #section9, #section10, #section12, #section13, #section14, #section16, #section17, #section18, #section19, #section21 {
   background-color: #0a222d;
 }
 
@@ -96,6 +100,15 @@ img {
   padding: 0 10px;
   margin: auto;
   text-align: right;
+}
+
+.mask {
+  background-color: #000000a8;
+  position: absolute;
+  display: none;
+  z-index: 90;
+  height: 100%;
+  width: 100%;
 }
 
 /* header */
@@ -148,6 +161,7 @@ img {
   background-image: url(../img/bg_footer.png);
   width: 100%;
   height: 100vh;
+  background-position: bottom;
   background-size: cover;
   color: white;
 }
@@ -259,6 +273,7 @@ img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  padding: 10px;
 }
 
 .ask_content h3 {
@@ -279,596 +294,43 @@ img {
   font-size: 1em;
 }
 
+.ask_content :nth-last-child(1) {
+  border-radius: 5px;
+  border: 1px solid white;
+  display: inline-block;
+  padding: 0 10px;
+}
+
 @media screen and (max-width:768px) {
   .ask_block {
     width: 100%;
   }
+  .ask_block #ask2, .ask_block #ask3, #ask2_hover, #ask3_hover {
+    height: 320px;
+  }
 }
 
-/* 同車共責 */
-
-.flex_layout img {
-  width: 100%;
-  padding: 5%;
+.ask_box {
+  position: relative;
 }
 
-.flex_layout h3 {
-  font-size: 1.4em;
+.yt_box {
+  z-index: 9999;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  padding: 16px;
+  background: #ffffffe0;
+  border-radius: 5px 0px 0px 5px;
+  box-shadow: -1px 2px 6px black;
+  line-height: 30px;
+  display: flex;
+  cursor: pointer;
 }
 
-.flex_layout p {
-  text-align: center;
-  color: white;
-}
-
-.one-three {
-  width: 30%;
-  margin: auto;
-}
-
-.two-three {
-  width: 70%;
-  margin: auto;
-}
-
-.one-two {
-  width: 50%;
-  margin: auto;
-}
-
-.cut-one {
-  width: 35%;
-}
-
-.cut-two {
-  width: 65%;
-}
-
-#mobile-screen {
+.yt_box a, .yt_box a i {
+  color: black;
   display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .flex_layout .person img {
-    width: 100%;
-  }
-  .flex_layout {
-    display: block;
-  }
-  .one-three {
-    width: 100%;
-    margin: auto;
-  }
-  .two-three {
-    width: 100%;
-    margin: auto;
-  }
-  .cut_one, .cut_two {
-    width: 100%;
-  }
-  .one-two {
-    width: 100%;
-    margin: auto;
-  }
-  #mobile-screen {
-    display: block;
-  }
-  #full-screen {
-    display: none;
-  }
-}
-
-.clock_layout1 {
-  position: relative;
-}
-
-.clock_layout2 {
-  display: flex;
-  align-items: center;
-  margin: auto;
-  text-align: left;
-}
-
-.clock_layout1, .clock_layout2 {
-  width: 50%;
-}
-
-.clock_layout2 form input {
-  margin-bottom: 20px;
-}
-
-.clock_layout2 form label {
-  color: white;
-}
-
-@media screen and (max-width:768px) {
-  .clock_layout1, .clock_layout2 {
-    width: 100%;
-  }
-}
-
-/* 同車共責圖表 */
-
-.chart_ul li {
-  list-style-type: none;
-}
-
-.chart_ul {
-  display: flex;
-  justify-content: space-around;
-  border-bottom: 1px solid;
-  line-height: 35px;
-}
-
-.year {
-  display: flex;
-  align-items: center;
-}
-
-.year_area {
-  z-index: 1;
-  color: #fff;
-}
-
-.year_bar {
-  position: relative;
-}
-
-.year_bar div {
-  margin: 5px;
-}
-
-.year_case {
-  position: absolute;
-  top: 60%;
-  left: 40%;
-  border: 1px solid white;
-  border-radius: 5px;
-  margin-bottom: 5%;
-}
-
-.year_case h3 {
-  color: #fbb03b;
-  display: flex;
-  align-items: center;
-  width: 300px;
-  margin: auto;
-}
-
-.year_case h4 {
-  color: #fbb03b;
-  font-size: 1.1em;
-  border-bottom: 1px solid white;
-  padding-bottom: 10px;
-  line-height: 30px;
-}
-
-.year_case p {
-  color: white;
-  line-height: 30px;
-  padding: 10px;
-}
-
-.year_case img {
-  width: 60px;
-}
-
-.year_case span {
-  width: 60%;
-}
-
-.truck {
-  position: absolute;
-  left: 100%;
-  width: 105px;
-}
-
-@media screen and (max-width:828px) {
-  .year_ps {
-    display: none;
-  }
-  .year_case {
-    width: 100%;
-    position: relative;
-    left: 0;
-  }
-}
-
-@media screen and (max-width:768px) {
-  .truck {
-    display: none;
-  }
-  .year_case h3 {
-    width: auto;
-    padding: 25px;
-  }
-}
-
-@media screen and (max-width:450px) {
-  .year_case img {
-    width: 64px;
-  }
-}
-
-/* each-other */
-
-#y1996 {
-  animation: y1996 4s;
-  -webkit-animation: y1996 4s;
-  -moz-animation: y1996 5s 4s;
-  -o-animation: y1996 5s 4s;
-  width: 92.5%;
-  background-color: #CC4040;
-}
-
-@keyframes y1996 {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 92.5%;
-  }
-}
-
-#y1997 {
-  animation: y1997 4s;
-  -webkit-animation: y1997 4s;
-  -moz-animation: y1997 4s;
-  -o-animation: y1997 4s;
-  width: 88.5%;
-  background-color: #CC4040;
-}
-
-@keyframes y1997 {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 88.5%;
-  }
-}
-
-#y1998 {
-  animation: y1998 4s;
-  -webkit-animation: y1998 4s;
-  -moz-animation: y1998 4s;
-  -o-animation: y1998 4s;
-  width: 90.5%;
-  background-color: #CC4040;
-}
-
-@keyframes y1998 {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 90.5%;
-  }
-}
-
-#y1999 {
-  animation: y1999 4s;
-  -webkit-animation: y1999 4s;
-  -moz-animation: y1999 4s;
-  -o-animation: y1999 4s;
-  width: 89.7%;
-  background-color: #CC4040;
-  position: relative;
-}
-
-@keyframes y1999 {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 89.7%;
-  }
-}
-
-#y2000 {
-  animation: y2000 4s;
-  -webkit-animation: y2000 4s;
-  -moz-animation: y2000 4s;
-  -o-animation: y2000 4s;
-  width: 91.1%;
-  background-color: #CC4040;
-}
-
-@keyframes y2000 {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 91.1%;
-  }
-}
-
-#y2001 {
-  animation: y2001 4s;
-  -webkit-animation: y2001 4s;
-  -moz-animation: y2001 4s;
-  -o-animation: y2001 4s;
-  width: 85%;
-  background-color: #CC4040;
-}
-
-@keyframes y2001 {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 85%;
-  }
-}
-
-#y2002 {
-  animation: y2002 4s;
-  -webkit-animation: y2002 4s;
-  -moz-animation: y2002 4s;
-  -o-animation: y2002 4s;
-  width: 71.4%;
-  background-color: #EFA543;
-}
-
-@keyframes y2002 {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 71.4%;
-  }
-}
-
-#y2003 {
-  animation: y2003 4s;
-  -webkit-animation: y2003 4s;
-  -moz-animation: y2003 4s;
-  -o-animation: y2003 4s;
-  width: 55.7%;
-  background-color: #EFA543;
-}
-
-@keyframes y2003 {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 55.7%;
-  }
-}
-
-#y2004 {
-  animation: y2004 4s;
-  -webkit-animation: y2004 4s;
-  -moz-animation: y2004 4s;
-  -o-animation: y2004 4s;
-  width: 50.9%;
-  background-color: #EFA543;
-}
-
-@keyframes y2004 {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 50.9%;
-  }
-}
-
-#y2005 {
-  animation: y2005 4s;
-  -webkit-animation: y2005 4s;
-  -moz-animation: y2005 4s;
-  -o-animation: y2005 4s;
-  width: 50.6%;
-  background-color: #EFA543;
-}
-
-@keyframes y2005 {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 50.6%;
-  }
-}
-
-#y2006 {
-  animation: y2006 4s;
-  -webkit-animation: y2006 4s;
-  -moz-animation: y2006 4s;
-  -o-animation: y2006 4s;
-  width: 43.7%;
-  background-color: #EFA543;
-}
-
-@keyframes y2006 {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 43.7%;
-  }
-}
-
-#y2007 {
-  animation: y2007 4s;
-  -webkit-animation: y2007 4s;
-  -moz-animation: y2007 4s;
-  -o-animation: y2007 4s;
-  width: 31%;
-  background-color: #EFA543;
-}
-
-@keyframes y2007 {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 31%;
-  }
-}
-
-#y2008 {
-  animation: y2008 4s;
-  -webkit-animation: y2008 4s;
-  -moz-animation: y2008 4s;
-  -o-animation: y2008 4s;
-  width: 21.7%;
-  background-color: #EFA543;
-}
-
-@keyframes y2008 {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 21.7%;
-  }
-}
-
-#y2009 {
-  animation: y2009 4s;
-  -webkit-animation: y2009 4s;
-  -moz-animation: y2009 4s;
-  -o-animation: y2009 4s;
-  width: 20.8%;
-  background-color: #EFA543;
-}
-
-@keyframes y2009 {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 20.8%;
-  }
-}
-
-#y2010 {
-  animation: y2010 4s;
-  -webkit-animation: y2010 4s;
-  -moz-animation: y2010 4s;
-  -o-animation: y2010 4s;
-  width: 21%;
-  background-color: #EFA543;
-}
-
-@keyframes y2010 {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 21%;
-  }
-}
-
-#y2011 {
-  animation: y2011 4s;
-  -webkit-animation: y2011 4s;
-  -moz-animation: y2011 4s;
-  -o-animation: y2011 4s;
-  width: 19.2%;
-  background-color: #EFA543;
-}
-
-@keyframes y2011 {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 19.2%;
-  }
-}
-
-#y2012 {
-  animation: y2012 4s;
-  -webkit-animation: y2012 4s;
-  -moz-animation: y2012 4s;
-  -o-animation: y2012 4s;
-  width: 18.4%;
-  background-color: #EFA543;
-}
-
-@keyframes y2012 {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 18.4%;
-  }
-}
-
-#y2013 {
-  animation: y2013 4s;
-  -webkit-animation: y2013 4s;
-  -moz-animation: y2013 4s;
-  -o-animation: y2013 4s;
-  width: 17%;
-  background-color: #EFA543;
-}
-
-@keyframes y2013 {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 17%;
-  }
-}
-
-#y2014 {
-  animation: y2014 4s;
-  -webkit-animation: y2014 4s;
-  -moz-animation: y2014 4s;
-  -o-animation: y2014 4s;
-  width: 16.2%;
-  background-color: #EFA543;
-}
-
-@keyframes y2014 {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 16.2%;
-  }
-}
-
-#y2015 {
-  animation: y2015 4s;
-  -webkit-animation: y2015 4s;
-  -moz-animation: y2015 4s;
-  -o-animation: y2015 4s;
-  width: 14.3%;
-  background-color: #EFA543;
-}
-
-@keyframes y2015 {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 14.3%;
-  }
-}
-
-#y2016 {
-  animation: y2016 4s;
-  -webkit-animation: y2016 4s;
-  -moz-animation: y2016 4s;
-  -o-animation: y2016 4s;
-  width: 15.2%;
-  background-color: #EFA543;
-}
-
-@keyframes y2016 {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 15.2%;
-  }
 }
 
 /* clock */
@@ -1144,6 +606,7 @@ sup {
 .chart_layout figure {
   width: 220px;
   transition: .2s;
+  margin: auto;
 }
 
 @media screen and (max-width:1400px) {
@@ -1169,7 +632,7 @@ sup {
 }
 
 #section3 figure, #section4 figure, #section6 figure, #section7 figure, #section15 figure {
-  width: 70%;
+  width: 90%;
   padding: 5% 0 0;
   margin: auto;
 }
@@ -1209,9 +672,11 @@ sup {
 /* 道路交通條例修正 */
 
 #section12 figure {
-  cursor: pointer;
   width: 70%;
-  margin: auto;
+}
+
+.roadlaw_mb {
+  display: none;
 }
 
 @media screen and (min-width:1000px) {
@@ -1228,6 +693,15 @@ sup {
   }
   #section12 h2, #section13 h2 {
     width: 70%;
+  }
+  #section12 figure {
+    width: 100%;
+  }
+  .roadlaw_mb {
+    display: block;
+  }
+  .roadlaw_pc {
+    display: none;
   }
 }
 
@@ -1247,6 +721,7 @@ sup {
   position: absolute;
   top: 10%;
   right: 0;
+  width: 30%;
 }
 
 .roadlaw p {
@@ -1289,19 +764,109 @@ sup {
   background-color: #9C5794;
 }
 
-@media screen and (max-width:1250px) {
-  .roadlaw .roadlaw_content {
-    position: relative;
-  }
-  #section11 figure {
+/* 同車共責 */
+
+.flex_layout img {
+  width: 100%;
+  padding: 5%;
+}
+
+.flex_layout h3 {
+  font-size: 1.4em;
+}
+
+.flex_layout p {
+  text-align: center;
+  color: white;
+}
+
+.one-three {
+  width: 30%;
+  margin: auto;
+}
+
+.two-three {
+  width: 70%;
+  margin: auto;
+}
+
+.one-two {
+  width: 50%;
+  margin: auto;
+}
+
+.cut-one {
+  width: 35%;
+}
+
+.cut-two {
+  width: 65%;
+}
+
+#mobile-screen {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .flex_layout .person img {
     width: 100%;
   }
-  .color_block span {
+  .flex_layout {
+    display: block;
+  }
+  .one-three {
+    width: 100%;
+    margin: auto;
+  }
+  .two-three {
+    width: 100%;
+    margin: auto;
+  }
+  .cut_one, .cut_two {
+    width: 100%;
+  }
+  .one-two {
+    width: 100%;
+    margin: auto;
+  }
+  #mobile-screen {
+    display: block;
+  }
+  #full-screen {
     display: none;
   }
 }
 
-/* 同車共責pc */
+.clock_layout1 {
+  position: relative;
+}
+
+.clock_layout2 {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  text-align: left;
+}
+
+.clock_layout1, .clock_layout2 {
+  width: 50%;
+}
+
+.clock_layout2 form input {
+  margin-bottom: 20px;
+}
+
+.clock_layout2 form label {
+  color: white;
+}
+
+@media screen and (max-width:768px) {
+  .clock_layout1, .clock_layout2 {
+    width: 100%;
+  }
+}
+
+/* 同車共責 */
 
 .flex_layout .car_text {
   width: 25%;
@@ -1313,17 +878,80 @@ sup {
   position: relative;
 }
 
-.flex_layout .car_text::before {
-  position: absolute;
-}
-
 .flex_layout .car_img {
   width: 50%;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1024px) {
+  .car_layout {
+    display: block;
+  }
   .flex_layout .car_text, .flex_layout .car_img {
+    width: 100% !important;
+  }
+}
+
+/* 同車共責圖表 */
+
+.year_case {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-bottom: 5%;
+}
+
+.year_case h3 {
+  color: #fbb03b;
+  display: inline-flex;
+  padding: 5px 0;
+}
+
+.year_case h4 {
+  color: #fbb03b;
+  font-size: 1.1em;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+  line-height: 30px;
+}
+
+.year_case p {
+  color: white;
+  line-height: 30px;
+  padding: 10px;
+}
+
+.year_case img {
+  width: 50px;
+}
+
+.year_case span {}
+
+.truck {
+  position: absolute;
+  left: 100%;
+  width: 105px;
+}
+
+@media screen and (max-width:828px) {
+  .year_case {
     width: 100%;
+    position: relative;
+    left: 0;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .year_case h3 {
+    width: auto;
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .year_case img {
+    width: 64px;
   }
 }
 
@@ -1423,11 +1051,11 @@ sup {
 .area1:before {
   content: "";
   border-style: solid;
-  border-width: 1px 0 5px 310px;
+  border-width: 2px 0 10px 310px;
   border-color: transparent transparent transparent #EDA03A;
   position: absolute;
   right: -300px;
-  bottom: 40px;
+  bottom: 25px;
 }
 
 .area2 {
@@ -1484,7 +1112,7 @@ sup {
   .area3:before {
     border-width: 1px 180px 7px 0px;
     left: -140px;
-    bottom: 100px;
+    bottom: 90px;
   }
 }
 
@@ -1577,14 +1205,17 @@ sup {
   transform: rotate(-80deg);
 }
 
-@media screen and (max-width:420px) {
-  .pour img:nth-child(1) {
+@media screen and (max-width:768px) {
+  .pour {
+    display: none;
+  }
+  /* .pour img:nth-child(1) {
     width: 80px;
   }
   .pour img:nth-child(2) {
     width: 80px;
     margin-left: 0px;
-  }
+  } */
 }
 
 /* 隔夜酒駕 */
@@ -1626,9 +1257,24 @@ sup {
   background-color: #CC4040;
 }
 
+@media screen and (max-width:768px) {
+  .color1::before, .color2::before, .color3::before, .color4::before {
+    width: 30px;
+    height: 30px;
+  }
+  .color1, .color2, .color3, .color4 {
+    font-size: 0.6em;
+    padding: 5px;
+  }
+}
+
 @media screen and (max-width:500px) {
   #section10 figure {
     width: 100%;
+  }
+  .color1::before, .color2::before, .color3::before, .color4::before {
+    width: 10px;
+    height: 10px;
   }
 }
 
@@ -1647,11 +1293,7 @@ sup {
 
 .drivecar {
   position: relative;
-  overflow-x: hidden;
-}
-
-.drivecar:nth-child(1) {
-  height: 1300px;
+  overflow: hidden;
 }
 
 .drivecar img {
@@ -1680,13 +1322,13 @@ sup {
 
 @media screen and (max-width:1640px) {
   .drivecar img:nth-last-child(1) {
-    width: 130px
+    width: 90px
   }
 }
 
 @media screen and (max-width:1290px) {
   .drivecar img:nth-last-child(1) {
-    width: 90px
+    width: 60px
   }
 }
 
@@ -1700,27 +1342,16 @@ sup {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 50%;
 }
 
 .step_area {
   padding: 10px 0;
 }
 
-.step_num {
-  background-color: #FBB03B;
-  width: 80px;
-  height: 80px;
-  border-radius: 100px;
+.step_icon figure {
+  width: 100px;
   margin: auto;
-  position: relative;
-}
-
-.step_num p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  transform: translateX(-50%) translateY(-50%);
 }
 
 .step_text {
@@ -1781,6 +1412,15 @@ sup {
   border-left: 1px solid white;
   height: 100px;
   margin-left: 50%;
+}
+
+@media screen and (max-width:768px) {
+  .step_icon {
+    margin: auto;
+  }
+  .step {
+    width: 100%;
+  }
 }
 
 /* 酒精鎖地圖 */
