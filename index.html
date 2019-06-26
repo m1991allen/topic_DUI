@@ -199,9 +199,8 @@
                             data-aos-duration="1000" style="text-align: left; padding-left:3%;font-size: 2.1em;">
                             但是...</h3>
                         <p style="text-align: left; color: white;">
-                            這個公式僅供參考，酒精濃度還和性別、年齡、飲酒速度、是否空腹、服用藥物等多種因素相關。<br>而根據醫學研究，喝酒之後會產生：
-                        </p>
-                        <div class="flex_layout_noblock">
+                            這個公式僅供參考，酒精濃度還和性別、年齡、飲酒速度、是否空腹、服用藥物等多種因素相關。而根據醫學研究，喝酒之後會產生： </p>
+                        <div class="flex_layout_noblock" style="padding:30px 0">
                             <div class="area">
                                 <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000"
                                     data-aos-once="true" class="psman area1">
@@ -224,8 +223,7 @@
                         </div>
                         <p style="text-align: left;color: white;">
                             因此法律標準只是平均值，每位駕駛都應該有<span style="font-size: 1.4em;color: #f90101;" data-aos="zoom-in"
-                                data-aos-duration="5000">「喝了酒就不該駕駛上路」</span>的認知。<br>
-                            根據台北市警察局統計，2018年晨間飲酒取締件數比之前增加25%，原因出在許多人疏忽隔天酒意未退。
+                                data-aos-duration="5000">「喝了酒就不該駕駛上路」</span>的認知。
                         </p>
                     </div>
                 </div>
@@ -272,25 +270,29 @@
                     </div>
                     <div class="clock_layout2">
                         <form style="margin:auto;">
-                            <label><input type="radio" name="time" value="3" checked onClick="restTime('太少了吧@@')"><span
-                                    class="clockstyle"> 3
-                                </span>小時<br></label>
-                            <label><input type="radio" name="time" value="6" onClick="restTime('需要更多休息吧 QQ')"><span
-                                    class="clockstyle"> 6
-                                </span>小時<br></label>
-                            <label><input type="radio" name="time" value="9" onClick="restTime('再多一點比較保險吧?')"><span
-                                    class="clockstyle"> 9
-                                </span>小時<br></label>
-                            <label><input type="radio" name="time" value="12" onClick="restTime('沒錯！')"><span
-                                    class="clockstyle"> 12
-                                </span>小時<br></label>
+                            <label>
+                                <input type="radio" name="time" value="3" onClick="restTime('太少了吧@@')">
+                                <span class="clockstyle"> 3</span>小時<br>
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="6" onClick="restTime('需要更多休息吧 QQ')">
+                                <span class="clockstyle"> 6</span>小時<br>
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="9" onClick="restTime('再多一點比較保險吧?')">
+                                <span class="clockstyle"> 9</span>小時<br>
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="12" onClick="restTime('沒錯！')">
+                                <span class="clockstyle"> 12</span>小時<br>
+                            </label>
                         </form>
                     </div>
                 </div>
                 <button id="result1" class="btn_result">查看答案</button>
             </div>
             <div id="info_answer1">
-                <p id="ans_sug">太少了吧@@</p>
+                <p id="answer">太少了吧@@</p>
                 <p>醫師建議，酒精濃度30%以下<br>
                     要休息12小時以上<br>
                     超過30%更需要休息24小時以上<br>
@@ -693,6 +695,12 @@
     </script>
     <!-- my_js -->
     <script src="js/script.js"></script>
+    <script>
+        function restTime(setting) {
+            myOption = setting;
+            document.getElementById("answer").innerHTML = myOption;
+        }
+    </script>
 
 </body>
 

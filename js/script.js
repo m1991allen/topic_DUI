@@ -11,10 +11,6 @@ $(document).ready(function () {
     closeEffect: "none"
   });
 
-  function restTime(setting) {
-    myOption = setting;
-    document.getElementById("ans_sug").innerHTML = myOption;
-  }
 
 
   // 錘子
