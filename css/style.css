@@ -671,7 +671,7 @@ sup {
   margin: auto;
 }
 
-@media screen and (max-width:1299px) {
+@media screen and (max-width:768px) {
   #section4 figure, #section6 figure, #section7 figure, #section10 figure, #section15 figure {
     width: 100%;
   }
