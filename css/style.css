@@ -141,8 +141,18 @@ img {
 @media screen and (max-width: 768px) {
   #section1 {
     background-position: bottom;
+    background-image: url(../img/bg_main_tablet.png);
+    background-size: cover;
   }
 }
+
+/* @media screen and (max-width: 450px) {
+  #section1 {
+    background-position: bottom;
+    background-image: url(../img/bg_main_mb.png);
+    background-size: cover;
+  }
+} */
 
 #section1 h1, #section1 p {
   width: 85%;
@@ -345,14 +355,38 @@ figure {
   border-radius: 5px 0px 0px 5px;
   box-shadow: -1px 2px 6px black;
   line-height: 30px;
-  display: flex;
   cursor: pointer;
 }
 
-.yt_box a, .yt_box a i {
-  color: black;
-  display: none;
+.yt_box div {
+  display: flex;
+  transition: .5s
 }
+
+.yt_box div a {
+  color: black;
+  transition: .5s
+}
+
+.yt_box div:hover {
+  color: red;
+}
+
+.yt_box a:hover, .yt_box i:hover {
+  color: red;
+}
+
+/* @media screen and (min-width:601px) {
+  .yt_box a {
+    display: block;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .yt_box a {
+    display: none;
+  }
+} */
 
 /* clock */
 
