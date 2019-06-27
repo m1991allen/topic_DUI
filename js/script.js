@@ -57,12 +57,6 @@ $(document).ready(function () {
     $("#ask1_hover,#ask2_hover,#ask3_hover").css("display", "none");
   });
 
-  // $(".yt_box").mouseenter(function () {
-  //   $(".yt_box>div>a").show(300);
-  // })
-  // $(".yt_box").mouseleave(function () {
-  //   $(".yt_box>div>a").hide(300);
-  // })
 
   // 酒精鎖地圖
   $("#set1").mouseover(function () {
