@@ -1,13 +1,6 @@
 @charset "UTF-8";
-@font-face {
-  /* 上傳字體 */
-  font-family: "Noto Sans CJK TC";
-  src: url(../font/NotoSansCJKtc-Regular.otf);
-  src: url(../font/NotoSansCJKtc-Bold.otf);
-}
-
 * {
-  font-family: "Noto Sans CJK TC", "Heiti TC", "黑體-繁", "Microsoft JhengHei", '微軟正黑體', Arial, Helvetica, sans-serif;
+  font-family: "Heiti TC", "黑體-繁", "Microsoft JhengHei", '微軟正黑體', Arial, Helvetica, sans-serif;
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -31,7 +24,7 @@ h1 {
   letter-spacing: 10px;
   text-align: center;
   color: white;
-  font-family: "Noto Sans CJK TC";
+  /* font-family: "Noto Sans CJK TC"; */
 }
 
 h2 {
@@ -41,7 +34,7 @@ h2 {
   text-indent: 6px;
   text-align: center;
   color: white;
-  font-family: "Noto Sans CJK TC";
+  /* font-family: "Noto Sans CJK TC"; */
 }
 
 h3 {
@@ -1259,12 +1252,6 @@ sup {
 }
 
 /* 隔夜酒駕 */
-
-#section10 figure {
-  width: 90%;
-  padding: 10% 0;
-  margin: auto;
-}
 
 .color1, .color2, .color3, .color4 {
   display: flex;
