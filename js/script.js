@@ -22,10 +22,10 @@ $(document).ready(function () {
   });
 
   // 答案
-  $("#result").click(function () {
-    $("#info_answer").css("display", "block");
-    $(".mask").css("display", "block")
-  });
+  // $("#result").click(function () {
+  //   $("#info_answer").css("display", "block");
+  //   $(".mask").css("display", "block")
+  // });
   $("#result1").click(function () {
     $("#info_answer1").css("display", "block");
     $(".mask").css("display", "block")
@@ -79,17 +79,23 @@ $(document).ready(function () {
   });
 
   // 倒酒
-  let deg = 0;
+  // let deg = 0;
+  // $("#pour_bot").mousedown(function () {
+  //   if (deg < 7) {
+  //     $("#pour_deg").attr("src", "img/game/wine_" + (deg + 1) + ".svg");
+  //   }
+  //   deg++;
+  //   
+  // });
+
   $("#pour_bot").mousedown(function () {
-    if (deg < 7) {
-      $("#pour_deg").attr("src", "img/game/wine_" + (deg + 1) + ".svg");
-    }
-    deg++;
+    $("#pour_deg").attr("src", "img/game/wine_7.svg");
+    $("#info_answer").css("display", "block");
+    $(".mask").css("display", "block")
   });
+
   $("#pour_deg").mousedown(function () {
-    $("#pour_deg").attr("src", "img/game/wine_0.svg");
-    let deg_null = 0;
-    deg = deg_null;
+    $("#pour_deg").attr("src", "img/game/wine_3.svg");
   });
 
   // 翻牌

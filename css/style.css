@@ -378,7 +378,36 @@ figure {
   color: red;
 }
 
-.yt_box a:hover, .yt_box i:hover {
+.fa-youtube {
+  color: #000;
+}
+
+/* .yt_box {
+  padding: 16px;
+  border: 4px dashed white;
+  border-radius: 5px;
+  line-height: 30px;
+  cursor: pointer;
+  width: 40%;
+  margin: auto;
+  margin-top: 30px;
+} */
+
+/* /* .yt_box ul {
+  transition: .5s
+} */
+
+.yt_box ul li a {
+  color: white;
+  transition: .5s;
+  padding: 10px;
+}
+
+*/ .yt_box div:hover {
+  color: red;
+}
+
+.yt_box a:hover {
   color: red;
 }
 
@@ -721,14 +750,18 @@ sup {
   display: none;
   color: white;
   text-align: left;
+  font-size: 1.3em !important;
+  padding: 20px !important;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1024px) {
   .section_pc {
     display: none;
   }
   .section_mb {
     display: block;
+    font-size: 1.3em;
+    padding: 20px;
   }
 }
 
@@ -1273,16 +1306,9 @@ sup {
 }
 
 @media screen and (max-width:768px) {
-  .pour {
+  .drunker {
     display: none;
   }
-  /* .pour img:nth-child(1) {
-    width: 80px;
-  }
-  .pour img:nth-child(2) {
-    width: 80px;
-    margin-left: 0px;
-  } */
 }
 
 /* 隔夜酒駕 */
@@ -1649,7 +1675,7 @@ sup {
   padding: 20px 0;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1024px) {
   #section21 figure img {
     width: 100%;
   }
