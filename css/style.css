@@ -393,6 +393,14 @@ figure {
 
 .ask_block_mb a {
   display: block;
+  position: relative;
+}
+
+.ask_block_mb a i {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  color: red;
 }
 
 .ask_block_mb p {
