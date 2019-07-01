@@ -294,7 +294,7 @@ figure {
   background-size: cover;
   display: block;
   width: 100%;
-  border: 3px solid #101b22;
+  border: 3px solid #0f1c22;
   background-position: center;
   cursor: pointer;
   color: white;
@@ -386,12 +386,54 @@ figure {
   padding: 0 10px;
 }
 
+.ask_block_mb {
+  display: none;
+  padding-bottom: 36px;
+}
+
+.ask_block_mb a {
+  display: block;
+}
+
+.ask_block_mb p {
+  text-align: left !important;
+}
+
+.ask_block_mb p:nth-child(1) {
+  font-size: 1.1em;
+}
+
+.ask_block_mb p:nth-last-child(1) {
+  border-bottom: 1px solid white;
+}
+
+.ask_block_mb #ask1_mb {
+  background-image: url(../img/per1.png);
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+}
+
+.ask_block_mb #ask2_mb {
+  background-image: url(../img/per2.png);
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+}
+
+.ask_block_mb #ask3_mb {
+  background-image: url(../img/per3.png);
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+}
+
 @media screen and (max-width:768px) {
   .ask_block {
-    width: 100%;
+    display: none;
   }
-  .ask_block #ask2, .ask_block #ask3, #ask2_hover, #ask3_hover {
-    height: 320px;
+  .ask_block_mb {
+    display: block;
   }
 }
 
