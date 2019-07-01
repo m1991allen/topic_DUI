@@ -822,7 +822,12 @@ sup {
 /* 道路交通條例修正 */
 
 #section12 figure {
-  width: 70%;
+  width: 100%;
+  text-align: right;
+}
+
+#section12 figure img {
+  width: 60%;
 }
 
 .roadlaw_mb {
@@ -837,14 +842,13 @@ sup {
 }
 
 @media screen and (max-width: 768px) {
+  #section12 figure img {
+    width: 100%;
+  }
   .cut_one figure {
     width: 40%;
     margin: auto;
   }
-  /* adj */
-  /* #section12 h2, #section13 h2 {
-    width: 70%;
-  } */
   #section12 figure {
     width: 100%;
   }
@@ -873,12 +877,13 @@ sup {
 .roadlaw .roadlaw_content {
   position: absolute;
   top: 10%;
-  right: 0;
+  left: 0;
   width: 30%;
 }
 
 .roadlaw p {
   padding: 5% 0;
+  text-align: left;
 }
 
 #hammer img {
