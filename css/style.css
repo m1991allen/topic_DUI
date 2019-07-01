@@ -195,6 +195,16 @@ img {
 
 /* main */
 
+.font_h2 {
+  font-size: 1.3em;
+}
+
+@media screen and (max-width:450px) {
+  .font_h2 {
+    font-size: 1.1em;
+  }
+}
+
 .section {
   vertical-align: middle;
 }
@@ -782,9 +792,10 @@ sup {
     width: 40%;
     margin: auto;
   }
-  #section12 h2, #section13 h2 {
+  /* adj */
+  /* #section12 h2, #section13 h2 {
     width: 70%;
-  }
+  } */
   #section12 figure {
     width: 100%;
   }
@@ -796,12 +807,14 @@ sup {
   }
 }
 
-@media screen and (max-width: 400px) {
+/* adj */
+
+/* @media screen and (max-width: 400px) {
   #section12 h2, #section13 h2 {
     width: 100%;
     border: none;
   }
-}
+} */
 
 .roadlaw {
   position: relative;
@@ -1051,6 +1064,17 @@ sup {
 
 /* 倒酒/休息 解答 */
 
+@media screen and (min-width:768px) {
+  #section8 .inner_layout {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+#section8 {
+  padding: 3% 0 0 0;
+}
+
 #info_answer, #info_answer1 {
   display: none;
   z-index: 99;
@@ -1107,11 +1131,14 @@ sup {
   padding: 0px;
 }
 
+/* adj */
+
+/* 
 @media screen and (max-width:768px) {
   #section7 p {
     padding: 10% 10% !important;
   }
-}
+} */
 
 .flex_layout_noblock {
   display: flex;
@@ -1279,6 +1306,11 @@ sup {
 }
 
 /* 倒酒 */
+
+.pour {
+  display: block;
+  text-align: center;
+}
 
 .pour img {
   padding: 0 10px;
