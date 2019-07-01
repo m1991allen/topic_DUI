@@ -168,6 +168,7 @@ img {
     background-position: bottom;
     background-image: url(../img/bg_main_tablet.png);
     background-size: cover;
+    background-position-y: 18px;
     height: auto;
   }
   #section1 p {
@@ -1039,6 +1040,10 @@ sup {
 }
 
 @media screen and (max-width:450px) {
+  .year_case h3, .year_case span {
+    display: block;
+    line-height: 30px;
+  }
   .year_case img {
     width: 64px;
   }
@@ -1298,6 +1303,18 @@ sup {
 @media screen and (max-width:768px) {
   .drunker {
     display: none;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .drunker {
+    display: none;
+  }
+  .pour img {
+    width: 70px;
+  }
+  .pour img:nth-child(2) {
+    margin-left: 20px;
   }
 }
 
