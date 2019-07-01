@@ -860,15 +860,6 @@ sup {
   }
 }
 
-/* adj */
-
-/* @media screen and (max-width: 400px) {
-  #section12 h2, #section13 h2 {
-    width: 100%;
-    border: none;
-  }
-} */
-
 .roadlaw {
   position: relative;
   padding: 5% 0;
@@ -1184,15 +1175,6 @@ sup {
 .drunker img {
   padding: 0px;
 }
-
-/* adj */
-
-/* 
-@media screen and (max-width:768px) {
-  #section7 p {
-    padding: 10% 10% !important;
-  }
-} */
 
 .flex_layout_noblock {
   display: flex;
