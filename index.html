@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:title" content="醉與罰 - 民視新聞數位專題" />
-    <meta property="og:site_name" content="醉與罰 - 民視數位專題" />
+    <meta property="og:title" content="酒駕專題／新制上路！台灣零酒駕的目標更近了嗎？-民視新聞" />
+    <meta property="og:site_name" content="醉與罰-民視數位專題" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://www.ftvnews.com.tw/topic_drunk/index.html" />
     <meta property="og:locale" content="zh_TW" />
     <meta property="og:image" content="https://www.ftvnews.com.tw/topic_drunk/img/social_cover.jpg" />
     <meta property="og:description"
         content="幾乎每天在媒體上，都可以看到酒駕事故發生，甚至因此奪走無辜生命，引發社會公憤。然而大家都知道酒駕危險性，相關刑責也不斷加重，酒駕事件為何還是不斷發生？政府還能做哪些事情，才能達到「零酒駕」的目標？" />
-    <meta property="fb:app_id" content="627579164392056" />
+    <meta property="fb:app_id" content="157389381527660" />
     <title>醉與罰 - 民視新聞</title>
     <!-- font_awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -710,10 +710,32 @@
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.3&appId=1854261788223985&autoLogAppEvents=1"></script>
+    <!-- fb share -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.3"></script>
+    <!-- fb analytics -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '157389381527660',
+                cookie: true,
+                xfbml: true,
+                version: 'v3.3'
+            });
 
+            FB.AppEvents.logPageView();
+
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <!-- jqCDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <!-- fancybox_js -->
