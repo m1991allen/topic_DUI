@@ -127,7 +127,6 @@ figcaption {
   border: 1px solid #3b5998;
   box-shadow: 4px 5px 4px #070c0e;
   cursor: pointer;
-  display: none;
 }
 
 #social i {
@@ -143,7 +142,7 @@ figcaption {
   height: 50px;
   background: #272727;
   right: 30px;
-  bottom: 30px;
+  bottom: 20px;
   z-index: 10000;
   position: fixed;
   border-radius: 50px;

@@ -98,9 +98,9 @@ $(document).ready(function () {
   });
   $(window).scroll(function () {
     if ($(this).scrollTop() < 100) { //判斷捲軸小於200座標位置時，消失
-      $('#gotop, #social').stop().fadeOut('fast');
+      $('#gotop').stop().fadeOut('fast');
     } else {
-      $('#gotop, #social').stop().fadeIn('fast'); //stop()可以讓使用者停止
+      $('#gotop').stop().fadeIn('fast'); //stop()可以讓使用者停止
     }
   });
 
