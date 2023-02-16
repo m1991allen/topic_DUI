@@ -1790,6 +1790,15 @@ sup {
     perspective: 1000px;
 }
 
+@media screen and (max-width: 500px) {
+    .card_flex {
+        display: block;
+    }
+    .flip-card {
+        margin: 1rem auto;
+    }
+}
+
 .flip-card-inner {
     position: relative;
     width: 100%;
